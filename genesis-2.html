@@ -6,181 +6,329 @@
     <title>Gênesis 2 - A Bíblia Explicada</title>
     <style>
         * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+            Margin: 0;
+            Padding: 0;
+            Box-sizing: border-box;
         }
 
-        body {
-            font-family: 'Georgia', serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        Body {
+            Font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            Background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            Color: #333;
+            Line-height: 1.8;
+            Padding: 20px;
         }
 
-        .container {
-            background: white;
-            border-radius: 20px;
-            padding: 40px;
-            max-width: 800px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        .Container {
+            Max-width: 900px;
+            Margin: 0 auto;
+            Background: white;
+            Border-radius: 15px;
+            Box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            Padding: 40px;
         }
 
-        .header {
-            text-align: center;
-            margin-bottom: 30px;
+        .Cabeçalho {
+            Text-align: center;
+            Margin-bottom: 40px;
+            Border-bottom: 3px solid #667eea;
+            Padding-bottom: 20px;
         }
 
-        .header h1 {
-            font-size: 2.5em;
-            color: #2d3748;
-            margin-bottom: 10px;
+        .Emoji {
+            Font-size: 60px;
+            Margin-bottom: 10px;
         }
 
-        .header .emoji {
-            font-size: 3em;
+        H1 {
+            Color: #667eea;
+            Font-size: 2.5em;
+            Margin-bottom: 10px;
         }
 
-        .subtitle {
-            font-style: italic;
-            color: #718096;
-            font-size: 1.3em;
-            text-align: center;
-            margin-bottom: 40px;
+        .Subtitulo {
+            Color: #666;
+            Font-size: 1.2em;
+            Font-style: italic;
         }
 
-        .verse {
-            background: #f7fafc;
-            border-left: 5px solid #5a67d8;
-            padding: 25px;
-            margin-bottom: 30px;
-            border-radius: 10px;
+        .Versiculo {
+            Background: #f8f9ff;
+            Border-left: 5px solid #667eea;
+            Padding: 25px;
+            Margin: 30px 0;
+            Border-radius: 8px;
+            Transition: transform 0.3s;
         }
 
-        .verse-number {
-            color: #5a67d8;
-            font-size: 1.5em;
-            font-weight: bold;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
+        .Versiculo:hover {
+            Transform: translateX(10px);
+            Box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
         }
 
-        .verse-text {
-            font-size: 1.2em;
-            line-height: 1.8;
-            color: #2d3748;
-            font-style: italic;
-            margin-bottom: 20px;
+        .Numero {
+            Color: #667eea;
+            Font-weight: bold;
+            Font-size: 1.3em;
+            Margin-bottom: 10px;
         }
 
-        .explanation-title {
-            color: #805ad5;
-            font-size: 1.2em;
-            font-weight: bold;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
+        .Texto {
+            Font-size: 1.1em;
+            Font-style: italic;
+            Color: #333;
+            Margin: 15px 0;
+            Line-height: 1.8;
         }
 
-        .explanation {
-            font-size: 1.1em;
-            line-height: 1.8;
-            color: #4a5568;
+        .Explicacao {
+            Background: white;
+            Padding: 15px;
+            Border-radius: 5px;
+            Margin-top: 15px;
         }
 
-        .explanation strong {
-            color: #2d3748;
-            font-weight: bold;
+        .Explicacao strong {
+            Color: #764ba2;
         }
 
-        .highlight-box {
-            background: #e6fffa;
-            border-left: 4px solid #38b2ac;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 8px;
+        .Destaque {
+            Background: #fff4e6;
+            Border-left: 4px solid #ff9800;
+            Padding: 15px;
+            Margin: 20px 0;
+            Border-radius: 5px;
         }
 
-        .highlight-box strong {
-            color: #234e52;
+        .Aplicacao {
+            Background: #e8f5e9;
+            Border-left: 4px solid #4caf50;
+            Padding: 15px;
+            Margin: 20px 0;
+            Border-radius: 5px;
+        }
+
+        .Palavra-chave {
+            Color: #667eea;
+            Font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="emoji">📖</div>
+    <div class="Container">
+        <div class="Cabeçalho">
+            <div class="Emoji">🌳</div>
             <h1>GÊNESIS 2</h1>
+            <p class="Subtitulo">O Descanso de Deus e a Criação do Homem</p>
         </div>
 
-        <p class="subtitle">O Descanso de Deus e o Jardim do Éden</p>
-
-        <!-- Versículo 1 -->
-        <div class="verse">
-            <div class="verse-number">📍 Versículo 1</div>
-            <p class="verse-text">"Assim foram acabados os céus e a terra, com todo o seu exército." (NVI)</p>
-            
-            <div class="explanation-title">💬 Explicação:</div>
-            <p class="explanation">
-                Depois de criar tudo em 6 dias, Deus olhou e disse: <strong>"PRONTO!"</strong> 🎉
-                <br><br>
-                A palavra <strong>"exército"</strong> aqui não é de guerra, mas significa <strong>TUDO</strong> que Deus fez - estrelas, planetas, animais, plantas, tudo organizadinho e funcionando perfeitamente!
-            </p>
-        </div>
-
-        <!-- Versículo 2 -->
-        <div class="verse">
-            <div class="verse-number">📍 Versículo 2</div>
-            <p class="verse-text">"No sétimo dia Deus já havia concluído a obra que realizara, e nesse dia descansou." (NVI)</p>
-            
-            <div class="explanation-title">💬 Explicação:</div>
-            <p class="explanation">
-                Deus <strong>NÃO</strong> descansou porque estava cansado (Ele não cansa nunca! 💪), mas porque a obra estava <strong>COMPLETA</strong>!
-                <br><br>
-                Ele separou um dia especial pra <strong>celebrar</strong> e <strong>contemplar</strong> tudo que tinha feito. É tipo quando você termina um projeto e para pra admirar: "Ficou lindo!" 😊
-            </p>
-        </div>
-
-        <!-- Versículo 3 -->
-        <div class="verse">
-            <div class="verse-number">📍 Versículo 3</div>
-            <p class="verse-text">"Deus abençoou o sétimo dia e o santificou, porque nele descansou de toda a obra que realizara na criação." (NVI)</p>
-            
-            <div class="explanation-title">💬 Explicação:</div>
-            <p class="explanation">
-                Deus não só descansou, mas <strong>ABENÇOOU</strong> e <strong>SANTIFICOU</strong> esse dia! ✨
-                <br><br>
-                <strong>Santificar</strong> = separar como especial, sagrado.
-                <br><br>
-                Por isso temos o domingo (ou sábado, dependendo da tradição) como dia de <strong>descanso</strong> e <strong>adoração</strong>. Deus nos ensina que precisamos de um dia pra parar, respirar e focar Nele! 🙏
-            </p>
-
-            <div class="highlight-box">
-                <strong>💡 Aplicação prática:</strong> Se até Deus descansou, você também precisa! Não se mate de trabalhar 7 dias por semana. Tire um dia pra descansar, estar com Deus e com a família. 😌
+        <!-- VERSÍCULO 1 -->
+        <div class="Versiculo">
+            <div class="Numero">📍 Versículo 1</div>
+            <p class="Texto">"Assim foram concluídos os céus e a terra, com todo o seu exército." (NVI)</p>
+            <div class="Explicacao">
+                <strong>💬 Explicação:</strong> A criação foi <span class="Palavra-chave">completada</span>! "Exército" significa tudo que existe: estrelas, planetas, animais, plantas. Deus finalizou Sua obra perfeita! 🌍✨
             </div>
         </div>
 
-        <!-- Versículo 7 (criação do homem) -->
-        <div class="verse">
-            <div class="verse-number">📍 Versículo 7</div>
-            <p class="verse-text">"Então o Senhor Deus formou o homem do pó da terra e soprou em suas narinas o fôlego de vida, e o homem se tornou um ser vivente." (NVI)</p>
-            
-            <div class="explanation-title">💬 Explicação:</div>
-            <p class="explanation">
-                Aqui tá o detalhe de como Deus criou o ser humano! 👤
-                <br><br>
-                🔹 <strong>Formou do pó</strong> = Deus literalmente "esculpiu" o homem com Suas próprias mãos! Como um oleiro molda o barro.
-                <br>
-                🔹 <strong>Soprou o fôlego de vida</strong> = Deus colocou Sua própria vida dentro do homem! Por isso somos diferentes dos animais - temos o "sopro" divino!
-                <br><br>
-                Isso mostra que <strong>somos especiais</strong> pra Deus! Ele não só falou "exista", mas pessoalmente criou cada detalhe nosso. 🥰
-            </p>
+        <!-- VERSÍCULO 2 -->
+        <div class="Versiculo">
+            <div class="Numero">📍 Versículo 2</div>
+            <p class="Texto">"No sétimo dia Deus já havia concluído a obra que realizara, e nesse dia descansou de toda a obra que tinha feito." (NVI)</p>
+            <div class="Explicacao">
+                <strong>💬 Explicação:</strong> Deus <span class="Palavra-chave">descansou</span> no 7º dia. Não porque estava cansado, mas para nos ensinar a importância do <span class="Palavra-chave">descanso</span>. Ele estabeleceu um padrão: trabalhe, depois descanse! 😊
+            </div>
+        </div>
+
+        <!-- VERSÍCULO 3 -->
+        <div class="Versiculo">
+            <div class="Numero">📍 Versículo 3</div>
+            <p class="Texto">"Abençoou Deus o sétimo dia e o santificou, porque nele descansou de toda a obra que tinha feito." (NVI)</p>
+            <div class="Explicacao">
+                <strong>💬 Explicação:</strong> <span class="Palavra-chave">Santificar</span> = separar como especial, sagrado. Por isso temos o domingo (ou sábado, dependendo da tradição) como dia de <span class="Palavra-chave">descanso</span> e <span class="Palavra-chave">adoração</span>. Deus nos ensina que precisamos de um dia pra parar, respirar e focar Nele! 🙏
+            </div>
+            <div class="Aplicacao">
+                💡 <strong>Aplicação prática:</strong> Se até Deus descansou, você também precisa! Não se mate de trabalhar 7 dias por semana. Tire um dia pra descansar, estar com Deus e com a família. 😊🏠
+            </div>
+        </div>
+
+        <!-- VERSÍCULO 4 -->
+        <div class="Versiculo">
+            <div class="Numero">📍 Versículo 4</div>
+            <p class="Texto">"Esta é a história das origens dos céus e da terra, no tempo em que foram criados: Quando o Senhor Deus fez a terra e os céus," (NVI)</p>
+            <div class="Explicacao">
+                <strong>💬 Explicação:</strong> Aqui começa uma <span class="Palavra-chave">segunda narrativa</span> da criação, mais detalhada! O foco agora é no <span class="Palavra-chave">homem</span> e seu relacionamento com Deus. 📖
+            </div>
+        </div>
+
+        <!-- VERSÍCULO 5 -->
+        <div class="Versiculo">
+            <div class="Numero">📍 Versículo 5</div>
+            <p class="Texto">"ainda não tinha brotado nenhum arbusto no campo, e nenhuma planta havia germinado, porque o Senhor Deus ainda não tinha feito chover sobre a terra, e também não havia homem para cultivar o solo." (NVI)</p>
+            <div class="Explicacao">
+                <strong>💬 Explicação:</strong> Antes do homem, a terra estava vazia. Deus criou o homem com um <span class="Palavra-chave">propósito</span>: cuidar da criação! Nós fomos feitos para <span class="Palavra-chave">trabalhar</span> e <span class="Palavra-chave">administrar</span> o que Deus nos deu. 🌱👨‍🌾
+            </div>
+        </div>
+
+        <!-- VERSÍCULO 6 -->
+        <div class="Versiculo">
+            <div class="Numero">📍 Versículo 6</div>
+            <p class="Texto">"mas brotava água da terra e irrigava toda a superfície do solo." (NVI)</p>
+            <div class="Explicacao">
+                <strong>💬 Explicação:</strong> Antes da chuva, Deus usava água que brotava da terra pra regar tudo. Ele sempre tem um <span class="Palavra-chave">plano perfeito</span> pra sustentar a vida! 💧🌍
+            </div>
+        </div>
+
+        <!-- VERSÍCULO 7 -->
+        <div class="Versiculo">
+            <div class="Numero">📍 Versículo 7</div>
+            <p class="Texto">"Então o Senhor Deus formou o homem do pó da terra e soprou em suas narinas o fôlego de vida, e o homem se tornou um ser vivente." (NVI)</p>
+            <div class="Explicacao">
+                <strong>💬 Explicação:</strong> Deus <span class="Palavra-chave">formou</span> o homem como um oleiro molda o barro! E soprou o <span class="Palavra-chave">fôlego de vida</span>. Isso significa que nossa vida vem diretamente de Deus! Somos feitos do pó, mas temos o sopro divino em nós! 🙌✨
+            </div>
+            <div class="Destaque">
+                🔥 <strong>Curiosidade:</strong> A palavra "Adão" vem do hebraico "adamah" que significa "terra/solo". Adão = homem da terra!
+            </div>
+        </div>
+
+        <!-- VERSÍCULO 8 -->
+        <div class="Versiculo">
+            <div class="Numero">📍 Versículo 8</div>
+            <p class="Texto">"Ora, o Senhor Deus tinha plantado um jardim no Éden, para os lados do leste, e ali colocou o homem que formara." (NVI)</p>
+            <div class="Explicacao">
+                <strong>💬 Explicação:</strong> Deus preparou um <span class="Palavra-chave">lugar especial</span> pro homem: o <span class="Palavra-chave">Jardim do Éden</span>! Éden significa "prazer, delícia". Era um lugar perfeito, sem dor, sem sofrimento. Um verdadeiro paraíso! 🌴🌺
+            </div>
+        </div>
+
+        <!-- VERSÍCULO 9 -->
+        <div class="Versiculo">
+            <div class="Numero">📍 Versículo 9</div>
+            <p class="Texto">"E o Senhor Deus fez nascer do solo todo tipo de árvores agradáveis aos olhos e boas para alimento. E no meio do jardim estavam a árvore da vida e a árvore do conhecimento do bem e do mal." (NVI)</p>
+            <div class="Explicacao">
+                <strong>💬 Explicação:</strong> Deus colocou árvores lindas e com frutos deliciosos! Mas duas eram especiais: <br>
+                🌳 <span class="Palavra-chave">Árvore da Vida:</span> dava vida eterna<br>
+                🌳 <span class="Palavra-chave">Árvore do Conhecimento do Bem e do Mal:</span> representava a escolha entre obedecer ou desobedecer a Deus
+            </div>
+        </div>
+
+        <!-- VERSÍCULO 10 -->
+        <div class="Versiculo">
+            <div class="Numero">📍 Versículo 10</div>
+            <p class="Texto">"E saía um rio do Éden para regar o jardim, e dali se dividia, formando quatro cabeceiras." (NVI)</p>
+            <div class="Explicacao">
+                <strong>💬 Explicação:</strong> O Éden tinha um <span class="Palavra-chave">sistema de irrigação perfeito</span>! Um rio que se dividia em quatro. Deus cuida dos detalhes! 💧🌊
+            </div>
+        </div>
+
+        <!-- VERSÍCULOS 11-14 -->
+        <div class="Versiculo">
+            <div class="Numero">📍 Versículos 11-14</div>
+            <p class="Texto">"O nome do primeiro é Pisom. Ele percorre toda a terra de Havilá, onde existe ouro. O ouro daquela terra é excelente; ali também existem o bdélio e a pedra de ônix. O nome do segundo rio é Giom; é o que percorre toda a terra de Cuxe. O nome do terceiro rio é Tigre; é o que corre pelo leste da Assíria. E o quarto rio é o Eufrates." (NVI)</p>
+            <div class="Explicacao">
+                <strong>💬 Explicação:</strong> Esses são os <span class="Palavra-chave">nomes dos quatro rios</span> que saíam do Éden. Alguns existem até hoje, como o Tigre e o Eufrates (no Iraque)! Isso mostra que o Éden era um <span class="Palavra-chave">lugar real</span>, não apenas simbólico! 🗺️
+            </div>
+        </div>
+
+        <!-- VERSÍCULO 15 -->
+        <div class="Versiculo">
+            <div class="Numero">📍 Versículo 15</div>
+            <p class="Texto">"O Senhor Deus colocou o homem no jardim do Éden para cuidar dele e cultivá-lo." (NVI)</p>
+            <div class="Explicacao">
+                <strong>💬 Explicação:</strong> O homem foi criado pra <span class="Palavra-chave">trabalhar</span>! Mas não era um trabalho cansativo ou estressante. Era prazeroso! Deus quer que cuidemos do que Ele nos dá. 👨‍🌾💼
+            </div>
+            <div class="Aplicacao">
+                💡 <strong>Aplicação prática:</strong> Cuide do que Deus te deu: sua casa, seu trabalho, sua família, seu corpo! Tudo o que você tem é uma dádiva de Deus pra você administrar bem! 🏠💪
+            </div>
+        </div>
+
+        <!-- VERSÍCULO 16-17 -->
+        <div class="Versiculo">
+            <div class="Numero">📍 Versículos 16-17</div>
+            <p class="Texto">"E o Senhor Deus ordenou ao homem: 'Coma livremente de qualquer árvore do jardim, mas não coma da árvore do conhecimento do bem e do mal, porque no dia em que dela comer, certamente você morrerá.'" (NVI)</p>
+            <div class="Explicacao">
+                <strong>💬 Explicação:</strong> Deus deu <span class="Palavra-chave">liberdade</span> pro homem, mas também estabeleceu um <span class="Palavra-chave">limite</span>. Adão podia comer de TODAS as árvores, menos uma! Isso testava sua <span class="Palavra-chave">obediência</span>. A consequência da desobediência seria a <span class="Palavra-chave">morte</span> (física e espiritual). ⚠️
+            </div>
+            <div class="Destaque">
+                🔥 <strong>Reflexão:</strong> Liberdade não é fazer TUDO que você quer. Liberdade verdadeira vem quando obedecemos a Deus e evitamos o que nos faz mal! 🙏
+            </div>
+        </div>
+
+        <!-- VERSÍCULO 18 -->
+        <div class="Versiculo">
+            <div class="Numero">📍 Versículo 18</div>
+            <p class="Texto">"Então o Senhor Deus declarou: 'Não é bom que o homem esteja só; farei para ele alguém que o auxilie e lhe corresponda.'" (NVI)</p>
+            <div class="Explicacao">
+                <strong>💬 Explicação:</strong> Mesmo no paraíso, Adão estava <span class="Palavra-chave">incompleto</span>! Deus disse: "Não é bom que o homem esteja só". Fomos criados para <span class="Palavra-chave">relacionamentos</span>! Precisamos de companhia, amizade, comunhão. 👫💕
+            </div>
+            <div class="Aplicacao">
+                💡 <strong>Aplicação prática:</strong> Não viva isolado! Deus nos criou pra viver em comunidade. Procure amizades saudáveis, participe de uma igreja, cultive relacionamentos! 🤝⛪
+            </div>
+        </div>
+
+        <!-- VERSÍCULOS 19-20 -->
+        <div class="Versiculo">
+            <div class="Numero">📍 Versículos 19-20</div>
+            <p class="Texto">"Depois que formou da terra todos os animais do campo e todas as aves do céu, o Senhor Deus os trouxe ao homem para ver como este lhes chamaria; e o nome que o homem desse a cada ser vivo, esse seria o seu nome. Assim o homem deu nomes a todos os rebanhos domésticos, às aves do céu e a todos os animais selvagens. Todavia não se encontrou para o homem alguém que o auxiliasse e lhe correspondesse." (NVI)</p>
+            <div class="Explicacao">
+                <strong>💬 Explicação:</strong> Deus trouxe os animais pra Adão <span class="Palavra-chave">dar nomes</span>! Isso mostra a <span class="Palavra-chave">inteligência</span> e <span class="Palavra-chave">autoridade</span> que Deus deu ao homem. Mas mesmo com todos os animais, Adão ainda estava sozinho. Nenhum animal podia ser uma companhia adequada. 🦁🐘🦅
+            </div>
+        </div>
+
+        <!-- VERSÍCULO 21 -->
+        <div class="Versiculo">
+            <div class="Numero">📍 Versículo 21</div>
+            <p class="Texto">"Então o Senhor Deus fez o homem cair em profundo sono e, enquanto ele dormia, tirou-lhe uma das costelas, fechando o lugar com carne." (NVI)</p>
+            <div class="Explicacao">
+                <strong>💬 Explicação:</strong> Deus fez Adão dormir e tirou uma de suas <span class="Palavra-chave">costelas</span>. Foi a primeira "cirurgia" da história! 😊 Deus usou uma parte de Adão pra criar a mulher. Isso mostra que <span class="Palavra-chave">homem e mulher são iguais em valor</span>, feitos um pro outro! 💑
+            </div>
+        </div>
+
+        <!-- VERSÍCULO 22 -->
+        <div class="Versiculo">
+            <div class="Numero">📍 Versículo 22</div>
+            <p class="Texto">"Com a costela que havia tirado do homem, o Senhor Deus fez uma mulher e a levou até ele." (NVI)</p>
+            <div class="Explicacao">
+                <strong>💬 Explicação:</strong> Deus <span class="Palavra-chave">formou</span> a mulher da costela de Adão. Não da cabeça (pra não mandar nele), nem dos pés (pra não ser pisada), mas do <span class="Palavra-chave">lado</span>, perto do coração, pra ser amada e protegida! 💖
+            </div>
+        </div>
+
+        <!-- VERSÍCULO 23 -->
+        <div class="Versiculo">
+            <div class="Numero">📍 Versículo 23</div>
+            <p class="Texto">"Disse então o homem: 'Esta, sim, é osso dos meus ossos e carne da minha carne! Ela será chamada mulher, porque do homem foi tirada.'" (NVI)</p>
+            <div class="Explicacao">
+                <strong>💬 Explicação:</strong> Quando Adão viu Eva, ele ficou <span class="Palavra-chave">maravilhado</span>! "ESTA SIM!" 😍 Foi amor à primeira vista! Ele reconheceu que ela era perfeita pra ele. Em hebraico, homem é "Ish" e mulher é "Ishá" - ambos vêm da mesma raiz! 👨‍❤️‍👩
+            </div>
+            <div class="Destaque">
+                🔥 <strong>Curiosidade:</strong> Essa é a primeira poesia da Bíblia! Adão estava tão feliz que fez um poema pra Eva! 📝💕
+            </div>
+        </div>
+
+        <!-- VERSÍCULO 24 -->
+        <div class="Versiculo">
+            <div class="Numero">📍 Versículo 24</div>
+            <p class="Texto">"Por essa razão, o homem deixará pai e mãe e se unirá à sua mulher, e eles se tornarão uma só carne." (NVI)</p>
+            <div class="Explicacao">
+                <strong>💬 Explicação:</strong> Aqui está o <span class="Palavra-chave">plano de Deus pro casamento</span>! 💍<br>
+                1️⃣ <span class="Palavra-chave">Deixar:</span> pai e mãe (ser maduro, independente)<br>
+                2️⃣ <span class="Palavra-chave">Unir:</span> se juntar à esposa (compromisso)<br>
+                3️⃣ <span class="Palavra-chave">Uma só carne:</span> união física, emocional e espiritual
+            </div>
+            <div class="Aplicacao">
+                💡 <strong>Aplicação prática:</strong> O casamento é coisa séria! É deixar tudo pra trás e se comprometer 100% com a outra pessoa. Se você é casado, invista no seu casamento! Se ainda não é, prepare-se bem! 💑🙏
+            </div>
+        </div>
+
+        <!-- VERSÍCULO 25 -->
+        <div class="Versiculo">
+            <div class="Numero">📍 Versículo 25</div>
+            <p class="Texto">"O homem e sua mulher viviam nus, e não sentiam vergonha." (NVI)</p>
+            <div class="Explicacao">
+                <strong>💬 Explicação:</strong> Antes do pecado, Adão e Eva viviam <span class="Palavra-chave">sem vergonha</span>. Eles eram puros, inocentes e viviam em perfeita harmonia com Deus e um com o outro. Não havia maldade, mentira ou pecado. Era o <span class="Palavra-chave">estado original</span> da humanidade! 🌟
+            </div>
+            <div class="Destaque">
+                🔥 <strong>Reflexão:</strong> Quando Jesus voltar, viveremos novamente sem vergonha, sem medo, sem pecado! Assim como era no Éden! Que esperança linda! 🙌✨
+            </div>
         </div>
 
     </div>
