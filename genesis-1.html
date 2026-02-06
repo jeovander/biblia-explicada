@@ -52,49 +52,40 @@
             font-style: italic;
         }
 
-        .dia {
+        .versiculo {
             background: #f8f9ff;
             border-left: 5px solid #667eea;
             padding: 25px;
             margin: 30px 0;
             border-radius: 8px;
+            transition: transform 0.3s;
         }
 
-        .dia-titulo {
-            color: #667eea;
-            font-weight: bold;
-            font-size: 1.8em;
-            margin-bottom: 15px;
-        }
-
-        .versiculo {
-            background: white;
-            border-left: 3px solid #764ba2;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 5px;
+        .versiculo:hover {
+            transform: translateX(10px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
         }
 
         .numero {
-            color: #764ba2;
+            color: #667eea;
             font-weight: bold;
-            font-size: 1.1em;
-            margin-bottom: 5px;
+            font-size: 1.3em;
+            margin-bottom: 10px;
         }
 
         .texto {
-            font-size: 1.05em;
+            font-size: 1.1em;
             font-style: italic;
             color: #333;
-            margin: 10px 0;
+            margin: 15px 0;
             line-height: 1.8;
         }
 
         .explicacao {
-            background: #f0f0f0;
+            background: white;
             padding: 15px;
             border-radius: 5px;
-            margin-top: 10px;
+            margin-top: 15px;
         }
 
         .explicacao strong {
@@ -122,12 +113,14 @@
             font-weight: bold;
         }
 
-        .resumo-dia {
+        .dia {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 15px;
-            border-radius: 8px;
-            margin-top: 15px;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 40px 0 20px 0;
+            text-align: center;
+            font-size: 1.5em;
             font-weight: bold;
         }
     </style>
@@ -137,219 +130,151 @@
         <div class="cabecalho">
             <div class="emoji">🌍</div>
             <h1>GÊNESIS 1</h1>
-            <p class="subtitulo">No Princípio, Deus Criou os Céus e a Terra</p>
+            <p class="subtitulo">No Princípio, Deus Criou...</p>
         </div>
 
-        <!-- VERSÍCULOS 1-2 -->
-        <div class="dia">
-            <div class="dia-titulo">🌌 O PRINCÍPIO</div>
-            
-            <div class="versiculo">
-                <div class="numero">📍 Versículo 1</div>
-                <p class="texto">"No princípio Deus criou os céus e a terra." (NVI)</p>
-                <div class="explicacao">
-                    <strong>💬 Explicação:</strong> O primeiro versículo da Bíblia! <span class="palavra-chave">Deus</span> sempre existiu, Ele não tem começo. Mas tudo o mais teve um <span class="palavra-chave">princípio</span>! Deus criou do NADA (ex-nihilo). Antes de Gênesis 1:1, só existia Deus! 🙌
-                </div>
+        <!-- VERSÍCULO 1 -->
+        <div class="versiculo">
+            <div class="numero">📍 Versículo 1</div>
+            <p class="texto">"No princípio Deus criou os céus e a terra." (NVI)</p>
+            <div class="explicacao">
+                <strong>💬 Explicação:</strong> A primeira frase da Bíblia! <span class="palavra-chave">Deus</span> sempre existiu e criou TUDO do nada! Antes Dele não havia nada: nem tempo, nem espaço, nem matéria. Ele é o <span class="palavra-chave">Criador</span> de tudo que existe! 🌌✨
             </div>
+            <div class="aplicacao">
+                💡 <strong>Aplicação prática:</strong> Se Deus criou o universo inteiro, Ele também pode criar algo novo na sua vida! Confie Nele! 🙏
+            </div>
+        </div>
 
-            <div class="versiculo">
-                <div class="numero">📍 Versículo 2</div>
-                <p class="texto">"A terra era sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas." (NVI)</p>
-                <div class="explicacao">
-                    <strong>💬 Explicação:</strong> A terra estava <span class="palavra-chave">vazia, escura e coberta de água</span>. Mas o <span class="palavra-chave">Espírito Santo</span> já estava ali, pairando (como uma ave que voa suavemente)! Deus estava pronto pra começar Sua obra maravilhosa! ✨
-                </div>
+        <!-- VERSÍCULO 2 -->
+        <div class="versiculo">
+            <div class="numero">📍 Versículo 2</div>
+            <p class="texto">"Era a terra sem forma e vazia; trevas cobriam a face do abismo, e o Espírito de Deus se movia sobre a face das águas." (NVI)</p>
+            <div class="explicacao">
+                <strong>💬 Explicação:</strong> A terra estava <span class="palavra-chave">caótica</span>, vazia e escura. Mas o <span class="palavra-chave">Espírito de Deus</span> já estava lá, preparando tudo! Mesmo no caos, Deus estava no controle! 🌊💨
             </div>
         </div>
 
         <!-- DIA 1 -->
-        <div class="dia">
-            <div class="dia-titulo">☀️ DIA 1 - LUZ</div>
-            
-            <div class="versiculo">
-                <div class="numero">📍 Versículos 3-5</div>
-                <p class="texto">"Disse Deus: 'Haja luz', e houve luz. Deus viu que a luz era boa, e separou a luz das trevas. Deus chamou à luz dia, e às trevas chamou noite. Passaram-se a tarde e a manhã; esse foi o primeiro dia." (NVI)</p>
-                <div class="explicacao">
-                    <strong>💬 Explicação:</strong> As <span class="palavra-chave">primeiras palavras</span> de Deus na criação: "HAJA LUZ"! 💡 E BOOM! A luz surgiu instantaneamente! Deus não precisou de nada, só falou e aconteceu! Ele separou a <span class="palavra-chave">luz das trevas</span>, criando o dia e a noite.
-                </div>
-            </div>
+        <div class="dia">☀️ DIA 1 - A LUZ</div>
 
+        <!-- VERSÍCULOS 3-5 -->
+        <div class="versiculo">
+            <div class="numero">📍 Versículos 3-5</div>
+            <p class="texto">"Disse Deus: 'Haja luz', e houve luz. Deus viu que a luz era boa, e separou a luz das trevas. Deus chamou à luz dia, e às trevas chamou noite. Passaram-se a tarde e a manhã; esse foi o primeiro dia." (NVI)</p>
+            <div class="explicacao">
+                <strong>💬 Explicação:</strong> Deus não precisou de ferramentas! Ele apenas <span class="palavra-chave">falou</span> e a luz apareceu! 💡 Deus separou a luz das trevas, criando o <span class="palavra-chave">dia</span> e a <span class="palavra-chave">noite</span>. O poder da palavra de Deus é incrível!
+            </div>
             <div class="destaque">
-                🔥 <strong>Curiosidade:</strong> O sol só foi criado no dia 4! Então essa luz do dia 1 vinha diretamente de Deus! No céu também não haverá sol, porque Deus será a luz! (Apocalipse 21:23) ✨
-            </div>
-
-            <div class="resumo-dia">
-                ✅ DIA 1: LUZ (dia e noite)
+                🔥 <strong>Curiosidade:</strong> A luz foi criada ANTES do sol! O sol só aparece no dia 4. Isso mostra que Deus não depende de nada pra iluminar!
             </div>
         </div>
 
         <!-- DIA 2 -->
-        <div class="dia">
-            <div class="dia-titulo">☁️ DIA 2 - CÉU</div>
-            
-            <div class="versiculo">
-                <div class="numero">📍 Versículos 6-8</div>
-                <p class="texto">"Depois disse Deus: 'Haja um firmamento entre as águas, separando águas de águas.' Então Deus fez o firmamento e separou as águas que ficavam abaixo do firmamento das que ficavam por cima. E assim foi. Ao firmamento Deus chamou céu. Passaram-se a tarde e a manhã; esse foi o segundo dia." (NVI)</p>
-                <div class="explicacao">
-                    <strong>💬 Explicação:</strong> Deus criou o <span class="palavra-chave">céu</span> (a atmosfera)! Ele separou as águas: algumas ficaram embaixo (mares, rios) e outras em cima (nuvens, vapor). Isso criou o <span class="palavra-chave">espaço</span> onde a gente vive e respira! 🌤️
-                </div>
-            </div>
+        <div class="dia">☁️ DIA 2 - O CÉU</div>
 
-            <div class="resumo-dia">
-                ✅ DIA 2: CÉU (atmosfera)
+        <!-- VERSÍCULOS 6-8 -->
+        <div class="versiculo">
+            <div class="numero">📍 Versículos 6-8</div>
+            <p class="texto">"Depois disse Deus: 'Haja entre as águas um firmamento que separe águas de águas'. Então Deus fez o firmamento e separou as águas que ficavam abaixo do firmamento das que ficavam por cima. E assim foi. Ao firmamento Deus chamou céu. Passaram-se a tarde e a manhã; esse foi o segundo dia." (NVI)</p>
+            <div class="explicacao">
+                <strong>💬 Explicação:</strong> Deus criou o <span class="palavra-chave">céu</span> (a atmosfera) e separou as águas: algumas ficaram embaixo (oceanos, rios) e outras em cima (nuvens, vapor). Assim temos o <span class="palavra-chave">ciclo da água</span>! 🌧️☁️
             </div>
         </div>
 
         <!-- DIA 3 -->
-        <div class="dia">
-            <div class="dia-titulo">🌱 DIA 3 - TERRA SECA E PLANTAS</div>
-            
-            <div class="versiculo">
-                <div class="numero">📍 Versículos 9-10</div>
-                <p class="texto">"E disse Deus: 'Ajuntem-se num só lugar as águas que estão debaixo do céu, e apareça a parte seca.' E assim foi. À parte seca Deus chamou terra, e chamou mares ao conjunto das águas. E Deus viu que ficou bom." (NVI)</p>
-                <div class="explicacao">
-                    <strong>💬 Explicação:</strong> Deus juntou as águas em um só lugar, e apareceu a <span class="palavra-chave">terra seca</span>! Surgiram os <span class="palavra-chave">continentes</span> e os <span class="palavra-chave">oceanos</span>! 🌍🌊
-                </div>
-            </div>
+        <div class="dia">🌱 DIA 3 - TERRA SECA E VEGETAÇÃO</div>
 
-            <div class="versiculo">
-                <div class="numero">📍 Versículos 11-13</div>
-                <p class="texto">"Então disse Deus: 'Cubra-se a terra de vegetação: plantas que deem sementes e árvores cujos frutos produzam sementes de acordo com as suas espécies.' E assim foi. A terra fez brotar a vegetação: plantas que dão sementes de acordo com as suas espécies, e árvores cujos frutos produzem sementes de acordo com as suas espécies. E Deus viu que ficou bom. Passaram-se a tarde e a manhã; esse foi o terceiro dia." (NVI)</p>
-                <div class="explicacao">
-                    <strong>💬 Explicação:</strong> Deus criou a <span class="palavra-chave">vegetação</span>! Plantas, árvores, flores, frutas! 🌳🌺 Tudo perfeito, produzindo sementes pra se multiplicar! Deus planejou tudo pra ser <span class="palavra-chave">autossustentável</span>!
-                </div>
+        <!-- VERSÍCULOS 9-13 -->
+        <div class="versiculo">
+            <div class="numero">📍 Versículos 9-13</div>
+            <p class="texto">"E disse Deus: 'Ajuntem-se as águas que estão debaixo do céu num só lugar, e apareça a parte seca'. E assim foi. À parte seca Deus chamou terra, e chamou mares ao conjunto das águas. E Deus viu que ficou bom. Então disse Deus: 'Cubra-se a terra de vegetação: plantas que deem sementes e árvores cujos frutos produzam sementes de acordo com as suas espécies'. E assim foi. A terra fez brotar a vegetação: plantas que dão sementes de acordo com as suas espécies, e árvores cujos frutos produzem sementes de acordo com as suas espécies. E Deus viu que ficou bom. Passaram-se a tarde e a manhã; esse foi o terceiro dia." (NVI)</p>
+            <div class="explicacao">
+                <strong>💬 Explicação:</strong> Deus juntou as águas e fez aparecer a <span class="palavra-chave">terra seca</span>! Depois criou as <span class="palavra-chave">plantas</span> e <span class="palavra-chave">árvores</span>. Cada uma com sua semente, pra se reproduzir! Deus pensou em tudo! 🌳🌾🌻
             </div>
-
-            <div class="resumo-dia">
-                ✅ DIA 3: TERRA SECA + VEGETAÇÃO (plantas e árvores)
+            <div class="aplicacao">
+                💡 <strong>Aplicação prática:</strong> Deus colocou em cada planta a capacidade de gerar frutos! Você também foi criado pra dar frutos! Seja produtivo no que Deus te chamou pra fazer! 🍎🌾
             </div>
         </div>
 
         <!-- DIA 4 -->
-        <div class="dia">
-            <div class="dia-titulo">🌞 DIA 4 - SOL, LUA E ESTRELAS</div>
-            
-            <div class="versiculo">
-                <div class="numero">📍 Versículos 14-19</div>
-                <p class="texto">"Disse Deus: 'Haja luminares no firmamento do céu para separar o dia da noite. Sirvam eles de sinais para marcar estações, dias e anos, e sirvam de luminares no firmamento do céu para iluminar a terra.' E assim foi. Deus fez os dois grandes luminares: o maior para governar o dia e o menor para governar a noite; fez também as estrelas. Deus os colocou no firmamento do céu para iluminar a terra, governar o dia e a noite, e separar a luz das trevas. E Deus viu que ficou bom. Passaram-se a tarde e a manhã; esse foi o quarto dia." (NVI)</p>
-                <div class="explicacao">
-                    <strong>💬 Explicação:</strong> Deus criou o <span class="palavra-chave">sol, a lua e as estrelas</span>! ☀️🌙⭐ Eles servem pra:
-                    <br>1️⃣ Iluminar a terra
-                    <br>2️⃣ Marcar o tempo (dias, meses, anos)
-                    <br>3️⃣ Orientar as estações
-                </div>
-            </div>
+        <div class="dia">🌞 DIA 4 - SOL, LUA E ESTRELAS</div>
 
+        <!-- VERSÍCULOS 14-19 -->
+        <div class="versiculo">
+            <div class="numero">📍 Versículos 14-19</div>
+            <p class="texto">"Disse Deus: 'Haja luzeiros no firmamento do céu para separar o dia da noite. Sirvam eles de sinais para marcar estações, dias e anos, e sirvam de luzeiros no firmamento do céu para iluminar a terra'. E assim foi. Deus fez os dois grandes luzeiros: o maior para governar o dia e o menor para governar a noite; fez também as estrelas. Deus os colocou no firmamento do céu para iluminar a terra, governar o dia e a noite, e separar a luz das trevas. E Deus viu que ficou bom. Passaram-se a tarde e a manhã; esse foi o quarto dia." (NVI)</p>
+            <div class="explicacao">
+                <strong>💬 Explicação:</strong> Agora sim! Deus criou o <span class="palavra-chave">sol</span> ☀️, a <span class="palavra-chave">lua</span> 🌙 e as <span class="palavra-chave">estrelas</span> ⭐! Eles servem pra marcar o tempo (dias, anos, estações) e iluminar a terra. O sol governa o dia, a lua governa a noite!
+            </div>
             <div class="destaque">
-                🔥 <strong>Reflexão:</strong> Deus criou BILHÕES de estrelas! E Ele conhece cada uma pelo nome (Salmos 147:4)! Se Ele cuida das estrelas, imagina o quanto Ele cuida de VOCÊ! 💖
-            </div>
-
-            <div class="resumo-dia">
-                ✅ DIA 4: SOL, LUA E ESTRELAS
+                🔥 <strong>Curiosidade:</strong> Existem bilhões de estrelas no universo! E Deus conhece cada uma pelo nome (Salmo 147:4)! 🤯✨
             </div>
         </div>
 
         <!-- DIA 5 -->
-        <div class="dia">
-            <div class="dia-titulo">🐟 DIA 5 - ANIMAIS AQUÁTICOS E AVES</div>
-            
-            <div class="versiculo">
-                <div class="numero">📍 Versículos 20-23</div>
-                <p class="texto">"Disse também Deus: 'Encham-se as águas de seres vivos, e sobre a terra voem aves sob o firmamento do céu.' Assim Deus criou os grandes animais aquáticos e os demais seres vivos que povoam as águas, de acordo com as suas espécies; e todas as aves, de acordo com as suas espécies. E Deus viu que ficou bom. Então Deus os abençoou, dizendo: 'Sejam férteis e multipliquem-se! Encham as águas dos mares! E multipliquem-se as aves na terra!' Passaram-se a tarde e a manhã; esse foi o quinto dia." (NVI)</p>
-                <div class="explicacao">
-                    <strong>💬 Explicação:</strong> Deus encheu os mares com <span class="palavra-chave">peixes</span> e criaturas aquáticas! 🐟🐋🦈 E criou as <span class="palavra-chave">aves</span> que voam no céu! 🦅🦜 Ele abençoou todos eles pra se multiplicarem!
-                </div>
-            </div>
+        <div class="dia">🐟 DIA 5 - ANIMAIS AQUÁTICOS E AVES</div>
 
-            <div class="aplicacao">
-                💡 <strong>Aplicação prática:</strong> Deus criou uma variedade INCRÍVEL de animais! Da baleia ao beija-flor! Isso mostra a <span class="palavra-chave">criatividade</span> e <span class="palavra-chave">poder</span> de Deus! Agradeça pela diversidade da criação! 🙏
-            </div>
-
-            <div class="resumo-dia">
-                ✅ DIA 5: PEIXES E AVES
+        <!-- VERSÍCULOS 20-23 -->
+        <div class="versiculo">
+            <div class="numero">📍 Versículos 20-23</div>
+            <p class="texto">"Disse também Deus: 'Encham-se as águas de seres vivos, e sobre a terra voem aves sob o firmamento do céu'. Assim Deus criou os grandes animais aquáticos e os demais seres vivos que povoam as águas, de acordo com as suas espécies; e todas as aves, de acordo com as suas espécies. E Deus viu que ficou bom. Então Deus os abençoou, dizendo: 'Sejam férteis e multipliquem-se! Encham as águas dos mares! E multipliquem-se as aves na terra'. Passaram-se a tarde e a manhã; esse foi o quinto dia." (NVI)</p>
+            <div class="explicacao">
+                <strong>💬 Explicação:</strong> Deus encheu os <span class="palavra-chave">oceanos</span> de peixes 🐠, baleias 🐋, golfinhos 🐬 e toda vida marinha! E criou as <span class="palavra-chave">aves</span> 🦅🦜 pra voarem no céu! Deus os <span class="palavra-chave">abençoou</span> pra se multiplicarem!
             </div>
         </div>
 
-        <!-- DIA 6 PARTE 1 -->
-        <div class="dia">
-            <div class="dia-titulo">🦁 DIA 6 - ANIMAIS TERRESTRES E O HOMEM</div>
-            
-            <div class="versiculo">
-                <div class="numero">📍 Versículos 24-25</div>
-                <p class="texto">"E disse Deus: 'Produza a terra seres vivos de acordo com as suas espécies: rebanhos domésticos, animais selvagens e os demais seres vivos da terra, cada um de acordo com a sua espécie.' E assim foi. Deus fez os animais selvagens de acordo com as suas espécies, os rebanhos domésticos de acordo com as suas espécies, e os demais seres vivos da terra de acordo com as suas espécies. E Deus viu que ficou bom." (NVI)</p>
-                <div class="explicacao">
-                    <strong>💬 Explicação:</strong> Deus criou os <span class="palavra-chave">animais terrestres</span>! 🐘🦁🐄🐕 Domésticos e selvagens! Cada um perfeito pra seu ambiente!
-                </div>
-            </div>
+        <!-- DIA 6 -->
+        <div class="dia">🦁 DIA 6 - ANIMAIS TERRESTRES E O HOMEM</div>
 
-            <div class="versiculo">
-                <div class="numero">📍 Versículos 26-27</div>
-                <p class="texto">"Então disse Deus: 'Façamos o homem à nossa imagem, conforme a nossa semelhança. Domine ele sobre os peixes do mar, sobre as aves do céu, sobre os animais grandes de toda a terra e sobre todos os pequenos animais que se movem rente ao chão.' Criou Deus o homem à sua imagem, à imagem de Deus o criou; homem e mulher os criou." (NVI)</p>
-                <div class="explicacao">
-                    <strong>💬 Explicação:</strong> A <span class="palavra-chave">COROA DA CRIAÇÃO</span>! 👑 Deus criou o <span class="palavra-chave">homem</span> à Sua imagem e semelhança! Isso significa que temos:
-                    <br>• <span class="palavra-chave">Inteligência</span>
-                    <br>• <span class="palavra-chave">Criatividade</span>
-                    <br>• <span class="palavra-chave">Capacidade de amar</span>
-                    <br>• <span class="palavra-chave">Livre arbítrio</span>
-                    <br>• <span class="palavra-chave">Consciência moral</span>
-                </div>
+        <!-- VERSÍCULOS 24-25 -->
+        <div class="versiculo">
+            <div class="numero">📍 Versículos 24-25</div>
+            <p class="texto">"E disse Deus: 'Produza a terra seres vivos de acordo com as suas espécies: rebanhos domésticos, animais selvagens e os demais seres vivos da terra, cada um de acordo com a sua espécie'. E assim foi. Deus fez os animais selvagens de acordo com as suas espécies, os rebanhos domésticos de acordo com as suas espécies, e os demais seres vivos da terra de acordo com as suas espécies. E Deus viu que ficou bom." (NVI)</p>
+            <div class="explicacao">
+                <strong>💬 Explicação:</strong> Deus criou todos os <span class="palavra-chave">animais terrestres</span>: leões 🦁, elefantes 🐘, cachorros 🐕, gatos 🐱, vacas 🐄, e tudo mais! Cada um com sua espécie única!
             </div>
+        </div>
 
+        <!-- VERSÍCULOS 26-28 - CRIAÇÃO DO HOMEM -->
+        <div class="versiculo">
+            <div class="numero">📍 Versículos 26-28</div>
+            <p class="texto">"Então disse Deus: 'Façamos o homem à nossa imagem, conforme a nossa semelhança. Domine ele sobre os peixes do mar, sobre as aves do céu, sobre os grandes animais de toda a terra e sobre todos os pequenos animais que se movem rente ao chão'. Criou Deus o homem à sua imagem, à imagem de Deus o criou; homem e mulher os criou. Deus os abençoou, e lhes disse: 'Sejam férteis e multipliquem-se! Encham e subjuguem a terra! Dominem sobre os peixes do mar, sobre as aves do céu e sobre todos os animais que se movem pela terra'." (NVI)</p>
+            <div class="explicacao">
+                <strong>💬 Explicação:</strong> A <span class="palavra-chave">coroa da criação</span>! Deus criou o <span class="palavra-chave">homem</span> e a <span class="palavra-chave">mulher</span> à Sua <span class="palavra-chave">imagem</span>! Isso significa que temos:
+                <br>✅ Inteligência, criatividade, emoções
+                <br>✅ Capacidade de amar, escolher e se relacionar com Deus
+                <br>✅ Autoridade pra cuidar da criação
+                <br><br>Somos <span class="palavra-chave">especiais</span>! Fomos feitos pra refletir Deus! 👨‍👩‍👧‍👦✨
+            </div>
+            <div class="aplicacao">
+                💡 <strong>Aplicação prática:</strong> Você foi criado à imagem de Deus! Isso significa que você tem VALOR INFINITO! Nunca se menospreze! Você é precioso aos olhos de Deus! 🙏💖
+            </div>
+        </div>
+
+        <!-- VERSÍCULOS 29-30 -->
+        <div class="versiculo">
+            <div class="numero">📍 Versículos 29-30</div>
+            <p class="texto">"Disse Deus: 'Eis que lhes dou todas as plantas que nascem em toda a terra e produzem sementes, e todas as árvores que dão frutos com sementes. Elas servirão de alimento para vocês. E dou todos os vegetais como alimento a tudo o que tem em si fôlego de vida: a todos os grandes animais da terra, a todas as aves do céu e a todas as criaturas que se movem rente ao chão'. E assim foi." (NVI)</p>
+            <div class="explicacao">
+                <strong>💬 Explicação:</strong> Deus providenciou <span class="palavra-chave">alimento</span> pra todos! Plantas e frutos pro homem e pros animais. Deus cuida de cada detalhe! 🍎🥕🌾
+            </div>
+        </div>
+
+        <!-- VERSÍCULO 31 -->
+        <div class="versiculo">
+            <div class="numero">📍 Versículo 31</div>
+            <p class="texto">"E Deus viu tudo o que havia feito, e tudo havia ficado muito bom. Passaram-se a tarde e a manhã; esse foi o sexto dia." (NVI)</p>
+            <div class="explicacao">
+                <strong>💬 Explicação:</strong> Depois de criar tudo, Deus olhou e disse: <span class="palavra-chave">"MUITO BOM!"</span> 🎉 Não era só "bom", era <span class="palavra-chave">MUITO BOM</span>! A criação estava <span class="palavra-chave">perfeita</span>, completa, harmoniosa!
+            </div>
             <div class="destaque">
-                🔥 <strong>Atenção:</strong> "Façamos" (plural) indica a <span class="palavra-chave">Trindade</span>! Pai, Filho e Espírito Santo participaram da criação! 🙌
-            </div>
-
-            <div class="versiculo">
-                <div class="numero">📍 Versículo 28</div>
-                <p class="texto">"Deus os abençoou e lhes disse: 'Sejam férteis e multipliquem-se! Encham e subjuguem a terra! Dominem sobre os peixes do mar, sobre as aves do céu e sobre todos os animais que se movem pela terra.'" (NVI)</p>
-                <div class="explicacao">
-                    <strong>💬 Explicação:</strong> Deus deu 3 ordens ao homem:
-                    <br>1️⃣ <span class="palavra-chave">Multiplicar</span> (ter filhos, crescer)
-                    <br>2️⃣ <span class="palavra-chave">Encher a terra</span> (espalhar-se)
-                    <br>3️⃣ <span class="palavra-chave">Dominar</span> (cuidar, administrar a criação)
-                </div>
-            </div>
-
-            <div class="aplicacao">
-                💡 <strong>Aplicação prática:</strong> Você foi criado à <span class="palavra-chave">imagem de Deus</span>! Você tem VALOR infinito! Não importa o que os outros digam, você é especial pros olhos de Deus! 💖👑
-            </div>
-
-            <div class="versiculo">
-                <div class="numero">📍 Versículos 29-30</div>
-                <p class="texto">"Disse Deus: 'Eis que eu dou a vocês todas as plantas que nascem em toda a terra e produzem sementes, e todas as árvores que dão frutos com sementes. Elas servirão de alimento para vocês. E dou todos os vegetais como alimento para tudo o que tem em si fôlego de vida: para todos os animais da terra, para todas as aves do céu e para todas as criaturas que se movem rente ao chão.' E assim foi." (NVI)</p>
-                <div class="explicacao">
-                    <strong>💬 Explicação:</strong> Deus deu <span class="palavra-chave">alimento</span> pro homem e pros animais! Originalmente, todos eram <span class="palavra-chave">vegetarianos</span>! Só depois do dilúvio que Deus permitiu comer carne. 🌱🍎
-                </div>
-            </div>
-
-            <div class="versiculo">
-                <div class="numero">📍 Versículo 31</div>
-                <p class="texto">"E Deus viu tudo o que havia feito, e tudo havia ficado muito bom. Passaram-se a tarde e a manhã; esse foi o sexto dia." (NVI)</p>
-                <div class="explicacao">
-                    <strong>💬 Explicação:</strong> Nos outros dias, Deus disse que era "bom". Mas aqui Ele disse que era <span class="palavra-chave">"MUITO BOM"</span>! Tudo estava perfeito! A criação estava completa! 🌟
-                </div>
-            </div>
-
-            <div class="resumo-dia">
-                ✅ DIA 6: ANIMAIS TERRESTRES + HOMEM E MULHER
+                🔥 <strong>Reflexão:</strong> Quando Deus olha pra você, Ele também diz: "MUITO BOM!" Você foi feito com perfeição e propósito! Nunca duvide do seu valor! 🙌✨
             </div>
         </div>
 
-        <!-- RESUMO FINAL -->
-        <div class="destaque">
-            <h2 style="color: #ff9800; margin-bottom: 15px;">📊 RESUMO DOS 6 DIAS DA CRIAÇÃO:</h2>
-            <p><strong>DIA 1:</strong> Luz ☀️</p>
-            <p><strong>DIA 2:</strong> Céu (atmosfera) ☁️</p>
-            <p><strong>DIA 3:</strong> Terra seca + Plantas 🌱</p>
-            <p><strong>DIA 4:</strong> Sol, Lua e Estrelas 🌞🌙⭐</p>
-            <p><strong>DIA 5:</strong> Peixes e Aves 🐟🦅</p>
-            <p><strong>DIA 6:</strong> Animais terrestres + Homem 🦁👨👩</p>
-            <p><strong>DIA 7:</strong> Descanso (Gênesis 2:2-3) 😊</p>
-        </div>
-
-        <div class="aplicacao">
-            <h2 style="color: #4caf50; margin-bottom: 15px;">🙏 APLICAÇÃO FINAL:</h2>
-            <p><strong>"Porque dele, e por ele, e para ele são todas as coisas. Glória, pois, a ele eternamente. Amém!" (Romanos 11:36 - NVI)</strong></p>
-            <p style="margin-top: 15px;">Tudo foi criado <span class="palavra-chave">por Deus</span>, <span class="palavra-chave">para Deus</span> e <span class="palavra-chave">por causa de Deus</span>! Viva pra glorificar o Criador! Cuide da criação! Valorize a vida! Reconheça que você foi feito à imagem do Deus Todo-Poderoso! 🙌✨</p>
+        <div class="aplicacao" style="text-align: center; font-size: 1.2em; margin-top: 40px;">
+            <strong>📖 "No princípio, Deus..." (Gênesis 1:1)</strong><br><br>
+            Tudo começa com Deus! Quando você coloca Ele em primeiro lugar na sua vida, tudo se encaixa! Deixe Deus ser o início de todos os seus projetos, sonhos e planos! 🙏✨
         </div>
 
     </div>
