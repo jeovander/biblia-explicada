@@ -46,6 +46,33 @@
             font-style: italic;
         }
 
+        .btn-imprimir {
+            display: block;
+            width: 250px;
+            margin: 20px auto;
+            background: #28a745;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 1.1em;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-imprimir:hover {
+            background: #218838;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3);
+        }
+
+        .btn-imprimir::before {
+            content: "🖨️ ";
+        }
+
         .destaque {
             background: linear-gradient(135deg, #fff4e6 0%, #ffe6cc 100%);
             border-left: 5px solid #ff6600;
@@ -161,12 +188,52 @@
         .exercicios li::before {
             content: "✏️ ";
         }
+
+        .rodape {
+            background: linear-gradient(135deg, #333 0%, #555 100%);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+
+        .rodape p {
+            margin: 5px 0;
+            font-size: 1em;
+        }
+
+        .rodape strong {
+            color: #ff9933;
+            font-size: 1.2em;
+        }
+
+        .rodape .emoji {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .btn-imprimir, .navegacao, .rodape {
+                display: none;
+            }
+            .container {
+                box-shadow: none;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>GÊNESIS 1 - A CRIAÇÃO</h1>
         <p class="subtitle">O início de todas as coisas</p>
+
+        <button class="btn-imprimir" onclick="window.print()">IMPRIMIR ESTA PÁGINA</button>
 
         <div class="destaque">
             <h3>🌟 Versículo em Destaque:</h3>
@@ -353,6 +420,15 @@
         <div class="navegacao">
             <a href="index.html" class="btn">⬅️ Voltar ao Início</a>
             <a href="genesis-2.html" class="btn">Próximo: Gênesis 2 ➡️</a>
+        </div>
+
+        <div class="rodape">
+            <div class="emoji">📖✨</div>
+            <p><strong>Criado por: Jeovander</strong></p>
+            <p>Bíblia Explicada - Estudando a Palavra com amor e dedicação</p>
+            <p style="margin-top: 10px; font-size: 0.9em; color: #ff9933;">
+                "A tua palavra é lâmpada para os meus pés e luz para o meu caminho." - Salmos 119:105
+            </p>
         </div>
     </div>
 </body>
