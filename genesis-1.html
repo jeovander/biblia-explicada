@@ -100,6 +100,79 @@
             line-height: 1.6;
         }
 
+        .quiz-section {
+            background: #f0f4ff;
+            padding: 30px;
+            margin: 40px 0;
+            border-radius: 15px;
+            border: 3px solid #667eea;
+        }
+
+        .quiz-section h2 {
+            color: #764ba2;
+            margin-bottom: 25px;
+            text-align: center;
+            font-size: 2em;
+        }
+
+        .question {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #667eea;
+        }
+
+        .question h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .question ol {
+            margin-left: 25px;
+        }
+
+        .question li {
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+
+        .answer {
+            background: #e8f5e9;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #4caf50;
+            display: none;
+        }
+
+        .answer.show {
+            display: block;
+        }
+
+        .answer strong {
+            color: #2e7d32;
+        }
+
+        .btn-gabarito {
+            display: block;
+            margin: 30px auto;
+            padding: 15px 40px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn-gabarito:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
         .navigation {
             display: flex;
             justify-content: space-between;
@@ -122,9 +195,14 @@
             box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
         }
 
-        .nav-button.disabled {
-            background: #ccc;
-            cursor: not-allowed;
+        @media print {
+            body {
+                background: white;
+            }
+            
+            .navigation, .btn-gabarito {
+                display: none;
+            }
         }
 
         @media (max-width: 768px) {
@@ -151,124 +229,422 @@
         </div>
 
         <div class="content">
-            <!-- Versículo 1 -->
+            <!-- Versículos 1-10 (já estão no código anterior) -->
             <div class="verse">
                 <span class="verse-number">Versículo 1</span>
-                <div class="verse-text">
-                    "No princípio criou Deus os céus e a terra."
-                </div>
+                <div class="verse-text">"No princípio criou Deus os céus e a terra."</div>
                 <div class="explanation">
                     <h3>💡 Explicação:</h3>
                     <p>Este é o início de tudo! Deus criou absolutamente TUDO do nada. Antes disso, não havia universo, planetas, estrelas... nada! Deus é eterno e sempre existiu. Ele é o Criador de todas as coisas.</p>
                 </div>
             </div>
 
-            <!-- Versículo 2 -->
             <div class="verse">
                 <span class="verse-number">Versículo 2</span>
-                <div class="verse-text">
-                    "E a terra era sem forma e vazia; e havia trevas sobre a face do abismo; e o Espírito de Deus se movia sobre a face das águas."
-                </div>
+                <div class="verse-text">"E a terra era sem forma e vazia; e havia trevas sobre a face do abismo; e o Espírito de Deus se movia sobre a face das águas."</div>
                 <div class="explanation">
                     <h3>💡 Explicação:</h3>
-                    <p>A terra estava completamente vazia e escura, coberta de água. Mas o Espírito de Deus já estava ali, preparando tudo para criar a vida. É como uma tela em branco esperando o pintor começar sua obra-prima!</p>
+                    <p>A terra estava completamente vazia e escura, coberta de água. Mas o Espírito de Deus já estava ali, preparando tudo para criar a vida.</p>
                 </div>
             </div>
 
-            <!-- Versículo 3 -->
             <div class="verse">
                 <span class="verse-number">Versículo 3</span>
-                <div class="verse-text">
-                    "E disse Deus: Haja luz; e houve luz."
-                </div>
+                <div class="verse-text">"E disse Deus: Haja luz; e houve luz."</div>
                 <div class="explanation">
                     <h3>💡 Explicação:</h3>
-                    <p>Deus apenas FALOU e a luz apareceu! Isso mostra o poder infinito de Deus. Ele não precisa de ferramentas ou materiais - Sua palavra é suficiente para criar qualquer coisa. A primeira coisa que Ele trouxe foi a luz, essencial para a vida.</p>
+                    <p>Deus apenas FALOU e a luz apareceu! Isso mostra o poder infinito de Deus. Ele não precisa de ferramentas - Sua palavra é suficiente para criar qualquer coisa.</p>
                 </div>
             </div>
 
-            <!-- Versículo 4 -->
             <div class="verse">
                 <span class="verse-number">Versículo 4</span>
-                <div class="verse-text">
-                    "E viu Deus que era boa a luz; e fez Deus separação entre a luz e as trevas."
-                </div>
+                <div class="verse-text">"E viu Deus que era boa a luz; e fez Deus separação entre a luz e as trevas."</div>
                 <div class="explanation">
                     <h3>💡 Explicação:</h3>
-                    <p>Deus viu que a luz era boa e perfeita. Então Ele separou a luz da escuridão, criando ordem no universo. Tudo que Deus faz é bom e tem um propósito específico!</p>
+                    <p>Deus viu que a luz era boa e perfeita. Então Ele separou a luz da escuridão, criando ordem no universo.</p>
                 </div>
             </div>
 
-            <!-- Versículo 5 -->
             <div class="verse">
                 <span class="verse-number">Versículo 5</span>
-                <div class="verse-text">
-                    "E Deus chamou à luz Dia; e às trevas chamou Noite. E foi a tarde e a manhã, o dia primeiro."
-                </div>
+                <div class="verse-text">"E Deus chamou à luz Dia; e às trevas chamou Noite. E foi a tarde e a manhã, o dia primeiro."</div>
                 <div class="explanation">
                     <h3>💡 Explicação:</h3>
-                    <p>Deus deu nomes à luz (Dia) e à escuridão (Noite), estabelecendo o ciclo de 24 horas que conhecemos. Este foi o primeiro dia da criação. Cada dia tinha tarde e manhã, mostrando a organização perfeita de Deus.</p>
+                    <p>Deus deu nomes à luz (Dia) e à escuridão (Noite), estabelecendo o ciclo de 24 horas. Este foi o primeiro dia da criação.</p>
                 </div>
             </div>
 
-            <!-- Versículo 6 -->
             <div class="verse">
                 <span class="verse-number">Versículo 6</span>
-                <div class="verse-text">
-                    "E disse Deus: Haja uma expansão no meio das águas, e haja separação entre águas e águas."
-                </div>
+                <div class="verse-text">"E disse Deus: Haja uma expansão no meio das águas, e haja separação entre águas e águas."</div>
                 <div class="explanation">
                     <h3>💡 Explicação:</h3>
-                    <p>Deus criou uma "expansão" - o céu ou atmosfera - para separar as águas. Algumas águas ficaram na terra (oceanos, rios) e outras nas nuvens. Isso criou o sistema de clima e chuva que sustenta a vida.</p>
+                    <p>Deus criou o céu (atmosfera) para separar as águas. Algumas ficaram na terra e outras nas nuvens.</p>
                 </div>
             </div>
 
-            <!-- Versículo 7 -->
             <div class="verse">
                 <span class="verse-number">Versículo 7</span>
-                <div class="verse-text">
-                    "E fez Deus a expansão, e fez separação entre as águas que estavam debaixo da expansão e as águas que estavam sobre a expansão; e assim foi."
-                </div>
+                <div class="verse-text">"E fez Deus a expansão, e fez separação entre as águas que estavam debaixo da expansão e as águas que estavam sobre a expansão; e assim foi."</div>
                 <div class="explanation">
                     <h3>💡 Explicação:</h3>
-                    <p>Deus completou a criação da atmosfera, separando definitivamente as águas da terra das águas do céu. Tudo aconteceu exatamente como Deus planejou - "assim foi"!</p>
+                    <p>Deus completou a criação da atmosfera. Tudo aconteceu exatamente como Ele planejou!</p>
                 </div>
             </div>
 
-            <!-- Versículo 8 -->
             <div class="verse">
                 <span class="verse-number">Versículo 8</span>
-                <div class="verse-text">
-                    "E chamou Deus à expansão Céus, e foi a tarde e a manhã, o dia segundo."
-                </div>
+                <div class="verse-text">"E chamou Deus à expansão Céus, e foi a tarde e a manhã, o dia segundo."</div>
                 <div class="explanation">
                     <h3>💡 Explicação:</h3>
-                    <p>Deus nomeou a expansão de "Céus" (ou firmamento). Este foi o segundo dia da criação. Repare que Deus organizava tudo antes de criar a vida - preparando a "casa" antes dos "moradores"!</p>
+                    <p>Deus nomeou a expansão de "Céus". Este foi o segundo dia da criação.</p>
                 </div>
             </div>
 
-            <!-- Versículo 9 -->
             <div class="verse">
                 <span class="verse-number">Versículo 9</span>
-                <div class="verse-text">
-                    "E disse Deus: Ajuntem-se as águas debaixo dos céus num lugar; e apareça a porção seca; e assim foi."
-                </div>
+                <div class="verse-text">"E disse Deus: Ajuntem-se as águas debaixo dos céus num lugar; e apareça a porção seca; e assim foi."</div>
                 <div class="explanation">
                     <h3>💡 Explicação:</h3>
-                    <p>Deus reuniu todas as águas da terra em um só lugar (oceanos, mares) e fez aparecer a terra seca (continentes). Isso criou os ambientes necessários para diferentes formas de vida - aquática e terrestre.</p>
+                    <p>Deus reuniu as águas em um só lugar (oceanos, mares) e fez aparecer a terra seca (continentes).</p>
                 </div>
             </div>
 
-            <!-- Versículo 10 -->
             <div class="verse">
                 <span class="verse-number">Versículo 10</span>
-                <div class="verse-text">
-                    "E chamou Deus à porção seca Terra; e ao ajuntamento das águas chamou Mares; e viu Deus que era bom."
-                </div>
+                <div class="verse-text">"E chamou Deus à porção seca Terra; e ao ajuntamento das águas chamou Mares; e viu Deus que era bom."</div>
                 <div class="explanation">
                     <h3>💡 Explicação:</h3>
-                    <p>Deus nomeou a parte seca de "Terra" e as águas de "Mares". Novamente, Ele viu que tudo era bom. Cada etapa da criação era perfeita e completa. Deus não deixa nada pela metade!</p>
+                    <p>Deus nomeou a parte seca de "Terra" e as águas de "Mares". Cada etapa da criação era perfeita!</p>
                 </div>
+            </div>
+
+            <!-- Versículos 11-31 -->
+            <div class="verse">
+                <span class="verse-number">Versículo 11</span>
+                <div class="verse-text">"E disse Deus: Produza a terra erva verde, erva que dê semente, árvore frutífera que dê fruto segundo a sua espécie, cuja semente esteja nela sobre a terra; e assim foi."</div>
+                <div class="explanation">
+                    <h3>💡 Explicação:</h3>
+                    <p>Deus ordenou que a terra produzisse plantas, ervas e árvores. Cada uma com sua própria semente para se reproduzir. Deus criou um sistema perfeito de vida vegetal!</p>
+                </div>
+            </div>
+
+            <div class="verse">
+                <span class="verse-number">Versículo 12</span>
+                <div class="verse-text">"E a terra produziu erva, erva dando semente conforme a sua espécie, e a árvore frutífera, cuja semente está nela conforme a sua espécie; e viu Deus que era bom."</div>
+                <div class="explanation">
+                    <h3>💡 Explicação:</h3>
+                    <p>A terra obedeceu a Deus e produziu toda vegetação. Cada planta com capacidade de gerar mais plantas. Deus viu que era bom!</p>
+                </div>
+            </div>
+
+            <div class="verse">
+                <span class="verse-number">Versículo 13</span>
+                <div class="verse-text">"E foi a tarde e a manhã, o dia terceiro."</div>
+                <div class="explanation">
+                    <h3>💡 Explicação:</h3>
+                    <p>Fim do terceiro dia. Agora a terra tinha continentes, oceanos e vegetação. Tudo pronto para a próxima etapa!</p>
+                </div>
+            </div>
+
+            <div class="verse">
+                <span class="verse-number">Versículo 14</span>
+                <div class="verse-text">"E disse Deus: Haja luminares na expansão dos céus, para haver separação entre o dia e a noite; e sejam eles para sinais e para tempos determinados e para dias e anos."</div>
+                <div class="explanation">
+                    <h3>💡 Explicação:</h3>
+                    <p>Deus criou o sol, a lua e as estrelas para marcar o tempo: dias, noites, estações do ano. Tudo com propósito específico!</p>
+                </div>
+            </div>
+
+            <div class="verse">
+                <span class="verse-number">Versículo 15</span>
+                <div class="verse-text">"E sejam para luminares na expansão dos céus, para iluminar a terra; e assim foi."</div>
+                <div class="explanation">
+                    <h3>💡 Explicação:</h3>
+                    <p>Esses astros também servem para iluminar a terra. O sol de dia, a lua e estrelas de noite. Design perfeito de Deus!</p>
+                </div>
+            </div>
+
+            <div class="verse">
+                <span class="verse-number">Versículo 16</span>
+                <div class="verse-text">"E fez Deus os dois grandes luminares: o luminar maior para governar o dia, e o luminar menor para governar a noite; e fez as estrelas."</div>
+                <div class="explanation">
+                    <h3>💡 Explicação:</h3>
+                    <p>Deus criou o sol (luminar maior) e a lua (luminar menor), além de bilhões de estrelas. Que universo majestoso!</p>
+                </div>
+            </div>
+
+            <div class="verse">
+                <span class="verse-number">Versículo 17</span>
+                <div class="verse-text">"E Deus os pôs na expansão dos céus para iluminar a terra."</div>
+                <div class="explanation">
+                    <h3>💡 Explicação:</h3>
+                    <p>Deus colocou cada astro em sua posição exata no universo. Nada é por acaso - tudo tem seu lugar!</p>
+                </div>
+            </div>
+
+            <div class="verse">
+                <span class="verse-number">Versículo 18</span>
+                <div class="verse-text">"E para governar o dia e a noite, e para fazer separação entre a luz e as trevas; e viu Deus que era bom."</div>
+                <div class="explanation">
+                    <h3>💡 Explicação:</h3>
+                    <p>Os astros funcionam perfeitamente para marcar dia e noite. Deus viu que todo esse sistema era bom!</p>
+                </div>
+            </div>
+
+            <div class="verse">
+                <span class="verse-number">Versículo 19</span>
+                <div class="verse-text">"E foi a tarde e a manhã, o dia quarto."</div>
+                <div class="explanation">
+                    <h3>💡 Explicação:</h3>
+                    <p>Fim do quarto dia. O universo está completo e funcionando perfeitamente!</p>
+                </div>
+            </div>
+
+            <div class="verse">
+                <span class="verse-number">Versículo 20</span>
+                <div class="verse-text">"E disse Deus: Produzam as águas abundantemente répteis de alma vivente; e voem as aves sobre a face da expansão dos céus."</div>
+                <div class="explanation">
+                    <h3>💡 Explicação:</h3>
+                    <p>Agora Deus cria a vida animal! Primeiro os peixes e animais marinhos, depois as aves. A vida explode na criação!</p>
+                </div>
+            </div>
+
+            <div class="verse">
+                <span class="verse-number">Versículo 21</span>
+                <div class="verse-text">"E Deus criou as grandes baleias, e todo o réptil de alma vivente que as águas abundantemente produziram conforme as suas espécies; e toda a ave de asas conforme a sua espécie; e viu Deus que era bom."</div>
+                <div class="explanation">
+                    <h3>💡 Explicação:</h3>
+                    <p>Deus criou desde as enormes baleias até os menores peixes, e todas as aves. Cada uma segundo sua espécie. Incrível diversidade!</p>
+                </div>
+            </div>
+
+            <div class="verse">
+                <span class="verse-number">Versículo 22</span>
+                <div class="verse-text">"E Deus os abençoou, dizendo: Frutificai e multiplicai-vos, e enchei as águas nos mares; e as aves se multipliquem na terra."</div>
+                <div class="explanation">
+                    <h3>💡 Explicação:</h3>
+                    <p>Deus abençoou os animais e deu a eles capacidade de se reproduzir. Primeira bênção registrada na Bíblia!</p>
+                </div>
+            </div>
+
+            <div class="verse">
+                <span class="verse-number">Versículo 23</span>
+                <div class="verse-text">"E foi a tarde e a manhã, o dia quinto."</div>
+                <div class="explanation">
+                    <h3>💡 Explicação:</h3>
+                    <p>Fim do quinto dia. Agora mares e céus estão cheios de vida!</p>
+                </div>
+            </div>
+
+            <div class="verse">
+                <span class="verse-number">Versículo 24</span>
+                <div class="verse-text">"E disse Deus: Produza a terra alma vivente conforme a sua espécie; gado, e répteis e feras da terra conforme a sua espécie; e assim foi."</div>
+                <div class="explanation">
+                    <h3>💡 Explicação:</h3>
+                    <p>Agora Deus cria os animais terrestres: gado (animais domésticos), répteis e animais selvagens. Cada um com suas características!</p>
+                </div>
+            </div>
+
+            <div class="verse">
+                <span class="verse-number">Versículo 25</span>
+                <div class="verse-text">"E fez Deus as feras da terra conforme a sua espécie, e o gado conforme a sua espécie, e todo o réptil da terra conforme a sua espécie; e viu Deus que era bom."</div>
+                <div class="explanation">
+                    <h3>💡 Explicação:</h3>
+                    <p>Deus criou leões, elefantes, cavalos, lagartos... toda diversidade de animais terrestres. E viu que era bom!</p>
+                </div>
+            </div>
+
+            <div class="verse">
+                <span class="verse-number">Versículo 26</span>
+                <div class="verse-text">"E disse Deus: Façamos o homem à nossa imagem, conforme a nossa semelhança; e domine sobre os peixes do mar, e sobre as aves dos céus, e sobre o gado, e sobre toda a terra, e sobre todo o réptil que se move sobre a terra."</div>
+                <div class="explanation">
+                    <h3>💡 Explicação:</h3>
+                    <p>MOMENTO ESPECIAL! Deus cria o ser humano à Sua imagem e semelhança. Somos diferentes dos animais - temos alma, consciência, criatividade. Deus nos deu autoridade sobre toda a criação!</p>
+                </div>
+            </div>
+
+            <div class="verse">
+                <span class="verse-number">Versículo 27</span>
+                <div class="verse-text">"E criou Deus o homem à sua imagem: à imagem de Deus o criou; homem e mulher os criou."</div>
+                <div class="explanation">
+                    <h3>💡 Explicação:</h3>
+                    <p>Deus criou homem E mulher, ambos à Sua imagem. Ambos têm igual valor e dignidade perante Deus. Que privilégio!</p>
+                </div>
+            </div>
+
+            <div class="verse">
+                <span class="verse-number">Versículo 28</span>
+                <div class="verse-text">"E Deus os abençoou, e Deus lhes disse: Frutificai e multiplicai-vos, e enchei a terra, e sujeitai-a; e dominai sobre os peixes do mar e sobre as aves dos céus, e sobre todo o animal que se move sobre a terra."</div>
+                <div class="explanation">
+                    <h3>💡 Explicação:</h3>
+                    <p>Deus abençoou o ser humano e deu missões: multiplicar-se, povoar a terra e cuidar dela com responsabilidade. Somos mordomos da criação!</p>
+                </div>
+            </div>
+
+            <div class="verse">
+                <span class="verse-number">Versículo 29</span>
+                <div class="verse-text">"E disse Deus: Eis que vos tenho dado toda a erva que dê semente, que está sobre a face de toda a terra; e toda a árvore, em que há fruto que dê semente, ser-vos-á para mantimento."</div>
+                <div class="explanation">
+                    <h3>💡 Explicação:</h3>
+                    <p>Deus providenciou alimento para os seres humanos: plantas, frutas, grãos. Tudo planejado para nossa nutrição!</p>
+                </div>
+            </div>
+
+            <div class="verse">
+                <span class="verse-number">Versículo 30</span>
+                <div class="verse-text">"E a todo o animal da terra, e a toda a ave dos céus, e a todo o réptil da terra, em que há alma vivente, toda a erva verde será para mantimento; e assim foi."</div>
+                <div class="explanation">
+                    <h3>💡 Explicação:</h3>
+                    <p>Deus também providenciou alimento para todos os animais. No princípio, todos eram vegetarianos - um mundo perfeito e em harmonia!</p>
+                </div>
+            </div>
+
+            <div class="verse">
+                <span class="verse-number">Versículo 31</span>
+                <div class="verse-text">"E viu Deus tudo quanto tinha feito, e eis que era muito bom; e foi a tarde e a manhã, o dia sexto."</div>
+                <div class="explanation">
+                    <h3>💡 Explicação:</h3>
+                    <p>Deus olhou para TODA a criação e viu que não era apenas "bom", mas "MUITO BOM"! Tudo estava perfeito, completo e funcionando em harmonia. Fim do sexto dia - a criação está completa!</p>
+                </div>
+            </div>
+
+            <!-- Seção de Perguntas -->
+            <div class="quiz-section">
+                <h2>📝 Perguntas para Reflexão</h2>
+
+                <div class="question">
+                    <h3>1. O que Deus criou no princípio?</h3>
+                    <ol type="a">
+                        <li>Apenas a terra</li>
+                        <li>Os céus e a terra</li>
+                        <li>Somente os animais</li>
+                        <li>Apenas o ser humano</li>
+                    </ol>
+                    <div class="answer">
+                        <strong>✅ Resposta correta: B</strong> - "No princípio criou Deus os céus e a terra" (v.1)
+                    </div>
+                </div>
+
+                <div class="question">
+                    <h3>2. Qual foi a primeira coisa que Deus disse para existir?</h3>
+                    <ol type="a">
+                        <li>O sol</li>
+                        <li>A lua</li>
+                        <li>A luz</li>
+                        <li>As estrelas</li>
+                    </ol>
+                    <div class="answer">
+                        <strong>✅ Resposta correta: C</strong> - "E disse Deus: Haja luz; e houve luz" (v.3)
+                    </div>
+                </div>
+
+                <div class="question">
+                    <h3>3. Em qual dia Deus criou o sol, a lua e as estrelas?</h3>
+                    <ol type="a">
+                        <li>Primeiro dia</li>
+                        <li>Segundo dia</li>
+                        <li>Terceiro dia</li>
+                        <li>Quarto dia</li>
+                    </ol>
+                    <div class="answer">
+                        <strong>✅ Resposta correta: D</strong> - Os luminares (sol, lua, estrelas) foram criados no quarto dia (v.14-19)
+                    </div>
+                </div>
+
+                <div class="question">
+                    <h3>4. Qual foi a primeira bênção de Deus registrada na Bíblia?</h3>
+                    <ol type="a">
+                        <li>Aos seres humanos</li>
+                        <li>Às plantas</li>
+                        <li>Aos peixes e aves</li>
+                        <li>Aos animais terrestres</li>
+                    </ol>
+                    <div class="answer">
+                        <strong>✅ Resposta correta: C</strong> - Deus abençoou primeiro os peixes e as aves (v.22)
+                    </div>
+                </div>
+
+                <div class="question">
+                    <h3>5. À imagem de quem o ser humano foi criado?</h3>
+                    <ol type="a">
+                        <li>Dos anjos</li>
+                        <li>De Deus</li>
+                        <li>Dos animais</li>
+                        <li>Do universo</li>
+                    </ol>
+                    <div class="answer">
+                        <strong>✅ Resposta correta: B</strong> - "Façamos o homem à nossa imagem, conforme a nossa semelhança" (v.26)
+                    </div>
+                </div>
+
+                <div class="question">
+                    <h3>6. Em qual dia Deus criou os animais terrestres?</h3>
+                    <ol type="a">
+                        <li>Quinto dia</li>
+                        <li>Sexto dia</li>
+                        <li>Terceiro dia</li>
+                        <li>Quarto dia</li>
+                    </ol>
+                    <div class="answer">
+                        <strong>✅ Resposta correta: B</strong> - Os animais terrestres foram criados no sexto dia (v.24-25)
+                    </div>
+                </div>
+
+                <div class="question">
+                    <h3>7. O que Deus disse após ver toda a criação completa?</h3>
+                    <ol type="a">
+                        <li>Era bom</li>
+                        <li>Era muito bom</li>
+                        <li>Era perfeito</li>
+                        <li>Era satisfatório</li>
+                    </ol>
+                    <div class="answer">
+                        <strong>✅ Resposta correta: B</strong> - "E viu Deus tudo quanto tinha feito, e eis que era muito bom" (v.31)
+                    </div>
+                </div>
+
+                <div class="question">
+                    <h3>8. Quantos dias Deus levou para criar tudo?</h3>
+                    <ol type="a">
+                        <li>3 dias</li>
+                        <li>5 dias</li>
+                        <li>6 dias</li>
+                        <li>7 dias</li>
+                    </ol>
+                    <div class="answer">
+                        <strong>✅ Resposta correta: C</strong> - Deus criou tudo em 6 dias (v.31)
+                    </div>
+                </div>
+
+                <div class="question">
+                    <h3>9. Qual era o alimento original dos seres humanos segundo Gênesis 1?</h3>
+                    <ol type="a">
+                        <li>Carne de animais</li>
+                        <li>Peixes</li>
+                        <li>Plantas e frutas</li>
+                        <li>Pão e vinho</li>
+                    </ol>
+                    <div class="answer">
+                        <strong>✅ Resposta correta: C</strong> - Deus deu plantas, frutas e grãos como alimento (v.29)
+                    </div>
+                </div>
+
+                <div class="question">
+                    <h3>10. Que responsabilidade Deus deu ao ser humano sobre a criação?</h3>
+                    <ol type="a">
+                        <li>Apenas observar</li>
+                        <li>Destruir quando necessário</li>
+                        <li>Dominar e cuidar</li>
+                        <li>Ignorar completamente</li>
+                    </ol>
+                    <div class="answer">
+                        <strong>✅ Resposta correta: C</strong> - "Dominai sobre os peixes do mar, aves dos céus e todo animal" (v.28)
+                    </div>
+                </div>
+
+                <button class="btn-gabarito" onclick="toggleAnswers()">🔍 Ver/Ocultar Gabarito</button>
             </div>
         </div>
 
@@ -279,12 +655,9 @@
 
         <!-- Rodapé -->
         <footer style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-align: center; padding: 30px 20px; margin-top: 0px; border-radius: 0px; box-shadow: 0 -5px 15px rgba(0,0,0,0.1);">
-            
-            <!-- Foto do Criador -->
             <div style="margin-bottom: 20px;">
                 <img src="jeovander.jpg.png" alt="Jeovander" style="width: 120px; height: 120px; border-radius: 50%; border: 5px solid white; box-shadow: 0 5px 15px rgba(0,0,0,0.3); object-fit: cover;">
             </div>
-            
             <h3 style="margin-bottom: 15px; font-size: 1.5em;">📖 Bíblia Explicada</h3>
             <p style="margin-bottom: 10px; line-height: 1.8;">
                 Projeto criado com ❤️ por <strong>Jeovander</strong><br>
@@ -299,5 +672,14 @@
             </p>
         </footer>
     </div>
+
+    <script>
+        function toggleAnswers() {
+            const answers = document.querySelectorAll('.answer');
+            answers.forEach(answer => {
+                answer.classList.toggle('show');
+            });
+        }
+    </script>
 </body>
 </html>
