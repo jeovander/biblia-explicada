@@ -3,440 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>📖 Gênesis 1 - A Criação | Bíblia Explicada</title>
+    <title>Gênesis 1 - A Criação | Bíblia Explicada</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #ff9933 0%, #ff6600 100%);
-            padding: 20px;
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 20px;
-            padding: 40px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
-        }
-
-        h1 {
-            color: #ff6600;
-            text-align: center;
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-
-        h1::before {
-            content: "📖 ";
-        }
-
-        .subtitle {
-            text-align: center;
-            color: #666;
-            font-size: 1.2em;
-            margin-bottom: 30px;
-            font-style: italic;
-        }
-
-        .btn-imprimir {
-            display: block;
-            width: 250px;
-            margin: 20px auto;
-            background: #28a745;
-            color: white;
-            padding: 15px 30px;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 10px;
-            font-weight: bold;
-            font-size: 1.1em;
-            border: none;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .btn-imprimir:hover {
-            background: #218838;
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3);
-        }
-
-        .btn-imprimir::before {
-            content: "🖨️ ";
-        }
-
-        .destaque {
-            background: linear-gradient(135deg, #fff4e6 0%, #ffe6cc 100%);
-            border-left: 5px solid #ff6600;
-            padding: 20px;
-            margin: 30px 0;
-            border-radius: 10px;
-        }
-
-        .destaque h3 {
-            color: #ff6600;
-            margin-bottom: 10px;
-        }
-
-        .destaque p {
-            color: #333;
-            font-size: 1.1em;
-            line-height: 1.8;
-        }
-
-        .versiculo {
-            background: #f9f9f9;
-            padding: 20px;
-            margin: 15px 0;
-            border-radius: 10px;
-            border-left: 4px solid #ff9933;
-            transition: all 0.3s ease;
-        }
-
-        .versiculo:hover {
-            background: #fff4e6;
-            transform: translateX(5px);
-            box-shadow: 0 5px 15px rgba(255, 102, 0, 0.2);
-        }
-
-        .versiculo strong {
-            color: #ff6600;
-            font-size: 1.1em;
-        }
-
-        .versiculo p {
-            margin-top: 8px;
-            color: #333;
-        }
-
-        .aplicacao {
-            background: #e6f7ff;
-            border-left: 5px solid #0066cc;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 10px;
-        }
-
-        .aplicacao h4 {
-            color: #0066cc;
-            margin-bottom: 10px;
-        }
-
-        .aplicacao p {
-            color: #333;
-        }
-
-        .navegacao {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 40px;
-            padding-top: 30px;
-            border-top: 2px solid #ff9933;
-        }
-
-        .btn {
-            background: #ff6600;
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            border-radius: 10px;
-            font-weight: bold;
-            transition: all 0.3s ease;
-        }
-
-        .btn:hover {
-            background: #ff9933;
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(255, 102, 0, 0.3);
-        }
-
-        .exercicios {
-            background: #fff9e6;
-            padding: 25px;
-            border-radius: 15px;
-            margin-top: 30px;
-            border: 3px dashed #ff9933;
-        }
-
-        .exercicios h3 {
-            color: #ff6600;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .exercicios ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .exercicios li {
-            background: white;
-            padding: 15px;
-            margin: 10px 0;
-            border-radius: 8px;
-            border-left: 4px solid #ff6600;
-        }
-
-        .exercicios li::before {
-            content: "✏️ ";
-        }
-
-        .rodape {
-            background: linear-gradient(135deg, #333 0%, #555 100%);
-            color: white;
-            text-align: center;
-            padding: 30px;
-            margin-top: 50px;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-        }
-
-        .rodape p {
-            margin: 5px 0;
-            font-size: 1em;
-        }
-
-        .rodape strong {
-            color: #ff9933;
-            font-size: 1.2em;
-        }
-
-        .rodape .emoji {
-            font-size: 1.5em;
-            margin: 10px 0;
-        }
-
-        @media print {
-            body {
-                background: white;
-                padding: 0;
-            }
-            .btn-imprimir, .navegacao, .rodape {
-                display: none;
-            }
-            .container {
-                box-shadow: none;
-            }
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #333; line-height: 1.8; padding: 20px; }
+        .container { max-width: 900px; margin: auto; background: #fff; padding: 40px; border-radius: 20px; box-shadow: 0 15px 40px rgba(0,0,0,0.2); }
+        header { text-align: center; margin-bottom: 40px; }
+        h1 { color: #ff8c00; font-size: 2.5em; margin-bottom: 10px; }
+        .subtitulo { color: #666; font-style: italic; margin-bottom: 20px; }
+        .btn-imprimir { background-color: #28a745; color: white; padding: 12px 30px; border: none; border-radius: 8px; font-size: 1em; font-weight: bold; cursor: pointer; margin-top: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .btn-imprimir:hover { background-color: #218838; }
+        .destaque { background-color: #fff3cd; border-left: 5px solid #ffc107; padding: 20px; margin: 30px 0; border-radius: 8px; }
+        .destaque h3 { color: #856404; margin-bottom: 10px; }
+        .versiculo { color: #495057; font-weight: bold; margin-bottom: 8px; }
+        .aplicacao { color: #6c757d; line-height: 1.6; }
+        .secao { margin: 30px 0; }
+        .secao h2 { color: #ff8c00; font-size: 1.8em; margin-bottom: 20px; border-bottom: 3px solid #ff8c00; padding-bottom: 10px; }
+        .versiculo-box { background-color: #f8f9fa; padding: 15px; margin: 15px 0; border-left: 4px solid #007bff; border-radius: 5px; }
+        .versiculo-numero { color: #dc3545; font-weight: bold; margin-right: 5px; }
+        .exercicios { background-color: #fff8e1; padding: 25px; border-radius: 10px; border: 2px dashed #ff8c00; margin-top: 40px; }
+        .exercicios h2 { color: #e65100; text-align: center; margin-bottom: 20px; }
+        .exercicios ul { list-style: none; padding-left: 0; }
+        .exercicios li { background-color: #fff; padding: 15px; margin: 10px 0; border-radius: 8px; border-left: 5px solid #ff8c00; }
+        @media print { body { background: white; } .btn-imprimir { display: none; } }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>GÊNESIS 1 - A CRIAÇÃO</h1>
-        <p class="subtitle">O início de todas as coisas</p>
+        <header>
+            <h1>📖 GÊNESIS 1 - A CRIAÇÃO</h1>
+            <p class="subtitulo">O início de todas as coisas</p>
+            <button class="btn-imprimir" onclick="window.print()">🖨️ IMPRIMIR ESTA PÁGINA</button>
+        </header>
 
-        <button class="btn-imprimir" onclick="window.print()">IMPRIMIR ESTA PÁGINA</button>
-
+        <!-- Versículo em Destaque -->
         <div class="destaque">
-            <h3>🌟 Versículo em Destaque:</h3>
-            <p><strong>"No princípio, Deus criou os céus e a terra."</strong> - Gênesis 1:1 (NAA)</p>
-            <p style="margin-top: 10px; font-size: 0.95em; color: #555;">
-                💡 <strong>Aplicação:</strong> Tudo começa com Deus! Antes de qualquer projeto na sua vida, reconheça que Ele é o Criador e tem um plano perfeito para você.
-            </p>
+            <h3>⭐ Versículo em Destaque:</h3>
+            <p class="versiculo">"No princípio criou Deus os céus e a terra." - Gênesis 1:1 (ACF)</p>
+            <p class="aplicacao">📌 <strong>Aplicação:</strong> Tudo começa com Deus! Antes de qualquer projeto na sua vida, reconheça que Ele é o Criador e tem um plano perfeito para você.</p>
         </div>
 
-        <h2 style="color: #ff6600; margin-top: 30px; margin-bottom: 20px;">📜 Os 31 Versículos:</h2>
+        <!-- Os 31 Versículos -->
+        <section class="secao">
+            <h2>📜 Os 31 Versículos:</h2>
 
-        <div class="versiculo">
-            <strong>Versículo 1:</strong>
-            <p>No princípio, Deus criou os céus e a terra.</p>
-        </div>
+            <div class="versiculo-box">
+                <p><span class="versiculo-numero">Versículo 1:</span> No princípio criou Deus os céus e a terra.</p>
+            </div>
 
-        <div class="versiculo">
-            <strong>Versículo 2:</strong>
-            <p>A terra era sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas.</p>
-        </div>
+            <div class="versiculo-box">
+                <p><span class="versiculo-numero">Versículo 2:</span> E a terra era sem forma e vazia; e havia trevas sobre a face do abismo; e o Espírito de Deus se movia sobre a face das águas.</p>
+            </div>
 
-        <div class="versiculo">
-            <strong>Versículo 3:</strong>
-            <p>Disse Deus: "Haja luz." E houve luz.</p>
-        </div>
+            <div class="versiculo-box">
+                <p><span class="versiculo-numero">Versículo 3:</span> E disse Deus: Haja luz; e houve luz.</p>
+            </div>
 
-        <div class="versiculo">
-            <strong>Versículo 4:</strong>
-            <p>E viu Deus que a luz era boa; e fez separação entre a luz e as trevas.</p>
-        </div>
+            <div class="versiculo-box">
+                <p><span class="versiculo-numero">Versículo 4:</span> E viu Deus que era boa a luz; e fez Deus separação entre a luz e as trevas.</p>
+            </div>
 
-        <div class="versiculo">
-            <strong>Versículo 5:</strong>
-            <p>Chamou Deus à luz Dia e às trevas, Noite. Houve tarde e manhã, o primeiro dia.</p>
-        </div>
+            <div class="versiculo-box">
+                <p><span class="versiculo-numero">Versículo 5:</span> E Deus chamou à luz Dia; e às trevas chamou Noite. E foi a tarde e a manhã, o dia primeiro.</p>
+            </div>
 
-        <div class="versiculo">
-            <strong>Versículo 6:</strong>
-            <p>Disse também Deus: "Haja um firmamento no meio das águas e separação entre águas e águas."</p>
-        </div>
+            <div class="versiculo-box">
+                <p><span class="versiculo-numero">Versículo 6:</span> E disse Deus: Haja uma expansão no meio das águas, e haja separação entre águas e águas.</p>
+            </div>
 
-        <div class="versiculo">
-            <strong>Versículo 7:</strong>
-            <p>Fez, pois, Deus o firmamento e separação entre as águas debaixo do firmamento e as águas sobre o firmamento. E assim se fez.</p>
-        </div>
+            <div class="versiculo-box">
+                <p><span class="versiculo-numero">Versículo 7:</span> E fez Deus a expansão, e fez separação entre as águas que estavam debaixo da expansão e as águas que estavam sobre a expansão; e assim foi.</p>
+            </div>
 
-        <div class="versiculo">
-            <strong>Versículo 8:</strong>
-            <p>E chamou Deus ao firmamento Céus. Houve tarde e manhã, o segundo dia.</p>
-        </div>
+            <div class="versiculo-box">
+                <p><span class="versiculo-numero">Versículo 8:</span> E chamou Deus à expansão Céus, e foi a tarde e a manhã, o dia segundo.</p>
+            </div>
 
-        <div class="versiculo">
-            <strong>Versículo 9:</strong>
-            <p>Disse também Deus: "Ajuntem-se as águas debaixo dos céus num só lugar, e apareça a porção seca." E assim se fez.</p>
-        </div>
+            <div class="versiculo-box">
+                <p><span class="versiculo-numero">Versículo 9:</span> E disse Deus: Ajuntem-se as águas debaixo dos céus num lugar; e apareça a porção seca; e assim foi.</p>
+            </div>
 
-        <div class="versiculo">
-            <strong>Versículo 10:</strong>
-            <p>À porção seca Deus chamou Terra e ao ajuntamento das águas, Mares. E viu Deus que isso era bom.</p>
-        </div>
+            <div class="versiculo-box">
+                <p><span class="versiculo-numero">Versículo 10:</span> E chamou Deus à porção seca Terra; e ao ajuntamento das águas chamou Mares; e viu Deus que era bom.</p>
+            </div>
 
-        <div class="versiculo">
-            <strong>Versículo 11:</strong>
-            <p>E disse: "Produza a terra relva, ervas que deem semente e árvores frutíferas que deem fruto segundo a sua espécie, cuja semente esteja nele, sobre a terra." E assim se fez.</p>
-        </div>
+            <div class="versiculo-box">
+                <p><span class="versiculo-numero">Versículo 11:</span> E disse Deus: Produza a terra erva verde, erva que dê semente, árvore frutífera que dê fruto segundo a sua espécie, cuja semente esteja nela sobre a terra; e assim foi.</p>
+            </div>
 
-        <div class="versiculo">
-            <strong>Versículo 12:</strong>
-            <p>A terra, pois, produziu relva, ervas que davam semente segundo a sua espécie e árvores que davam fruto, cuja semente estava nele, conforme a sua espécie. E viu Deus que isso era bom.</p>
-        </div>
+            <div class="versiculo-box">
+                <p><span class="versiculo-numero">Versículo 12:</span> E a terra produziu erva, erva dando semente conforme a sua espécie, e a árvore frutífera, cuja semente está nela conforme a sua espécie; e viu Deus que era bom.</p>
+            </div>
 
-        <div class="versiculo">
-            <strong>Versículo 13:</strong>
-            <p>Houve tarde e manhã, o terceiro dia.</p>
-        </div>
+            <div class="versiculo-box">
+                <p><span class="versiculo-numero">Versículo 13:</span> E foi a tarde e a manhã, o dia terceiro.</p>
+            </div>
 
-        <div class="versiculo">
-            <strong>Versículo 14:</strong>
-            <p>Disse também Deus: "Haja luzeiros no firmamento dos céus, para fazerem separação entre o dia e a noite; e sejam eles para sinais, para estações, para dias e anos."</p>
-        </div>
+            <div class="versiculo-box">
+                <p><span class="versiculo-numero">Versículo 14:</span> E disse Deus: Haja luminares na expansão dos céus, para haver separação entre o dia e a noite; e sejam eles para sinais e para tempos determinados e para dias e anos.</p>
+            </div>
 
-        <div class="versiculo">
-            <strong>Versículo 15:</strong>
-            <p>"E sejam para luzeiros no firmamento dos céus, para alumiar a terra." E assim se fez.</p>
-        </div>
+            <div class="versiculo-box">
+                <p><span class="versiculo-numero">Versículo 15:</span> E sejam para luminares na expansão dos céus, para iluminar a terra; e assim foi.</p>
+            </div>
 
-        <div class="versiculo">
-            <strong>Versículo 16:</strong>
-            <p>Fez Deus os dois grandes luzeiros: o maior para governar o dia, e o menor para governar a noite; e fez também as estrelas.</p>
-        </div>
+            <div class="versiculo-box">
+                <p><span class="versiculo-numero">Versículo 16:</span> E fez Deus os dois grandes luminares: o luminar maior para governar o dia, e o luminar menor para governar a noite; e fez as estrelas.</p>
+            </div>
 
-        <div class="versiculo">
-            <strong>Versículo 17:</strong>
-            <p>E os colocou Deus no firmamento dos céus para alumiar a terra,</p>
-        </div>
+            <div class="versiculo-box">
+                <p><span class="versiculo-numero">Versículo 17:</span> E Deus os pôs na expansão dos céus para iluminar a terra,</p>
+            </div>
 
-        <div class="versiculo">
-            <strong>Versículo 18:</strong>
-            <p>para governar o dia e a noite e para fazer separação entre a luz e as trevas. E viu Deus que isso era bom.</p>
-        </div>
+            <div class="versiculo-box">
+                <p><span class="versiculo-numero">Versículo 18:</span> E para governar o dia e a noite, e para fazer separação entre a luz e as trevas; e viu Deus que era bom.</p>
+            </div>
 
-        <div class="versiculo">
-            <strong>Versículo 19:</strong>
-            <p>Houve tarde e manhã, o quarto dia.</p>
-        </div>
+            <div class="versiculo-box">
+                <p><span class="versiculo-numero">Versículo 19:</span> E foi a tarde e a manhã, o dia quarto.</p>
+            </div>
 
-        <div class="versiculo">
-            <strong>Versículo 20:</strong>
-            <p>Disse também Deus: "Povoem-se as águas de enxames de seres viventes; e voem as aves sobre a terra, sob o firmamento dos céus."</p>
-        </div>
+            <div class="versiculo-box">
+                <p><span class="versiculo-numero">Versículo 20:</span> E disse Deus: Produzam as águas abundantemente répteis de alma vivente; e voem as aves sobre a face da expansão dos céus.</p>
+            </div>
 
-        <div class="versiculo">
-            <strong>Versículo 21:</strong>
-            <p>Criou, pois, Deus os grandes animais marinhos e todos os seres viventes que rastejam, os quais povoavam as águas, segundo as suas espécies; e todas as aves, segundo as suas espécies. E viu Deus que isso era bom.</p>
-        </div>
+            <div class="versiculo-box">
+                <p><span class="versiculo-numero">Versículo 21:</span> E Deus criou as grandes baleias, e todo o réptil de alma vivente que as águas abundantemente produziram conforme as suas espécies; e toda a ave de asas conforme a sua espécie; e viu Deus que era bom.</p>
+            </div>
 
-        <div class="versiculo">
-            <strong>Versículo 22:</strong>
-            <p>E Deus os abençoou, dizendo: "Sejam fecundos, multipliquem-se e encham as águas dos mares; e, na terra, se multipliquem as aves."</p>
-        </div>
+            <div class="versiculo-box">
+                <p><span class="versiculo-numero">Versículo 22:</span> E Deus os abençoou, dizendo: Frutificai e multiplicai-vos, e enchei as águas nos mares; e as aves se multipliquem na terra.</p>
+            </div>
 
-        <div class="versiculo">
-            <strong>Versículo 23:</strong>
-            <p>Houve tarde e manhã, o quinto dia.</p>
-        </div>
+            <div class="versiculo-box">
+                <p><span class="versiculo-numero">Versículo 23:</span> E foi a tarde e a manhã, o dia quinto.</p>
+            </div>
 
-        <div class="versiculo">
-            <strong>Versículo 24:</strong>
-            <p>Disse também Deus: "Produza a terra seres viventes, conforme a sua espécie: animais domésticos, répteis e animais selváticos, segundo a sua espécie." E assim se fez.</p>
-        </div>
+            <div class="versiculo-box">
+                <p><span class="versiculo-numero">Versículo 24:</span> E disse Deus: Produza a terra alma vivente conforme a sua espécie; gado, e répteis e feras da terra conforme a sua espécie; e assim foi.</p>
+            </div>
 
-        <div class="versiculo">
-            <strong>Versículo 25:</strong>
-            <p>E fez Deus os animais selváticos, segundo a sua espécie, e os animais domésticos, conforme a sua espécie, e todos os répteis da terra, conforme a sua espécie. E viu Deus que isso era bom.</p>
-        </div>
+            <div class="versiculo-box">
+                <p><span class="versiculo-numero">Versículo 25:</span> E fez Deus as feras da terra conforme a sua espécie, e o gado conforme a sua espécie, e todo o réptil da terra conforme a sua espécie; e viu Deus que era bom.</p>
+            </div>
 
-        <div class="versiculo">
-            <strong>Versículo 26:</strong>
-            <p>Também disse Deus: "Façamos o ser humano à nossa imagem, conforme a nossa semelhança. Tenha ele domínio sobre os peixes do mar, sobre as aves dos céus, sobre os animais domésticos, sobre toda a terra e sobre todos os répteis que rastejam pela terra."</p>
-        </div>
+            <div class="versiculo-box">
+                <p><span class="versiculo-numero">Versículo 26:</span> E disse Deus: Façamos o homem à nossa imagem, conforme a nossa semelhança; e domine sobre os peixes do mar, e sobre as aves dos céus, e sobre o gado, e sobre toda a terra, e sobre todo o réptil que se move sobre a terra.</p>
+            </div>
 
-        <div class="versiculo">
-            <strong>Versículo 27:</strong>
-            <p>Criou Deus o ser humano à sua imagem, à imagem de Deus o criou; homem e mulher os criou.</p>
-        </div>
+            <div class="versiculo-box">
+                <p><span class="versiculo-numero">Versículo 27:</span> E criou Deus o homem à sua imagem; à imagem de Deus o criou; homem e mulher os criou.</p>
+            </div>
 
-        <div class="versiculo">
-            <strong>Versículo 28:</strong>
-            <p>E Deus os abençoou e lhes disse: "Sejam fecundos, multipliquem-se, encham a terra e subjuguem-na. Tenham domínio sobre os peixes do mar, sobre as aves dos céus e sobre todos os animais que rastejam pela terra."</p>
-        </div>
+            <div class="versiculo-box">
+                <p><span class="versiculo-numero">Versículo 28:</span> E Deus os abençoou, e Deus lhes disse: Frutificai e multiplicai-vos, e enchei a terra, e sujeitai-a; e dominai sobre os peixes do mar e sobre as aves dos céus, e sobre todo o animal que se move sobre a terra.</p>
+            </div>
 
-        <div class="versiculo">
-            <strong>Versículo 29:</strong>
-            <p>E disse Deus: "Eis que lhes tenho dado todas as ervas que dão semente e se acham na superfície de toda a terra e todas as árvores em que há fruto que dê semente; isso lhes será para mantimento."</p>
-        </div>
+            <div class="versiculo-box">
+                <p><span class="versiculo-numero">Versículo 29:</span> E disse Deus: Eis que vos tenho dado toda a erva que dê semente, que está sobre a face de toda a terra; e toda a árvore, em que há fruto que dê semente, ser-vos-á para mantimento.</p>
+            </div>
 
-        <div class="versiculo">
-            <strong>Versículo 30:</strong>
-            <p>"E a todos os animais da terra, e a todas as aves dos céus, e a todos os répteis da terra, em que há fôlego de vida, toda erva verde lhes será para mantimento." E assim se fez.</p>
-        </div>
+            <div class="versiculo-box">
+                <p><span class="versiculo-numero">Versículo 30:</span> E a todo o animal da terra, e a toda a ave dos céus, e a todo o réptil da terra, em que há alma vivente, toda a erva verde será para mantimento; e assim foi.</p>
+            </div>
 
-        <div class="versiculo">
-            <strong>Versículo 31:</strong>
-            <p>Viu Deus tudo quanto fizera, e eis que era muito bom. Houve tarde e manhã, o sexto dia.</p>
-        </div>
+            <div class="versiculo-box">
+                <p><span class="versiculo-numero">Versículo 31:</span> E viu Deus tudo quanto tinha feito, e eis que era muito bom; e foi a tarde e a manhã, o dia sexto.</p>
+            </div>
+        </section>
 
-        <div class="aplicacao">
-            <h4>💡 Aplicação Prática:</h4>
-            <p><strong>Você foi criado à imagem de Deus!</strong> Isso significa que você tem valor infinito. Hoje, lembre-se de que Deus planejou cada detalhe da sua vida com amor e propósito. Agradeça a Ele pela sua criação única!</p>
-        </div>
-
+        <!-- Exercícios de Fixação -->
         <div class="exercicios">
-            <h3>✏️ Exercícios de Fixação</h3>
+            <h2>✏️ Exercícios de Fixação</h2>
             <ul>
-                <li>Qual foi a primeira coisa que Deus criou? (v. 1)</li>
-                <li>Em que dia Deus criou a luz? (v. 3-5)</li>
-                <li>Quando foram criados o sol, a lua e as estrelas? (v. 14-19)</li>
-                <li>Em que dia Deus criou os animais marinhos e as aves? (v. 20-23)</li>
-                <li>À imagem de quem fomos criados? (v. 26-27)</li>
-                <li>Quantos dias durou a criação? (v. 31)</li>
+                <li>📝 Qual foi a primeira coisa que Deus criou? (v. 1)</li>
+                <li>📝 Em que dia Deus criou a luz? (v. 3-5)</li>
+                <li>📝 Quando foram criados o sol, a lua e as estrelas? (v. 14-19)</li>
+                <li>📝 Em que dia Deus criou os animais marinhos e as aves? (v. 20-23)</li>
+                <li>📝 À imagem de quem fomos criados? (v. 26-27)</li>
+                <li>📝 Quantos dias durou a criação? (v. 31)</li>
             </ul>
         </div>
 
-        <div class="navegacao">
-            <a href="index.html" class="btn">⬅️ Voltar ao Início</a>
-            <a href="genesis-2.html" class="btn">Próximo: Gênesis 2 ➡️</a>
-        </div>
-
-        <div class="rodape">
-            <div class="emoji">📖✨</div>
-            <p><strong>Criado por: Jeovander</strong></p>
-            <p>Bíblia Explicada - Estudando a Palavra com amor e dedicação</p>
-            <p style="margin-top: 10px; font-size: 0.9em; color: #ff9933;">
-                "A tua palavra é lâmpada para os meus pés e luz para o meu caminho." - Salmos 119:105
-            </p>
+        <!-- Botão do Gabarito -->
+        <div style="text-align: center; margin-top: 40px; margin-bottom: 60px;">
+            <a href="gabarito-genesis-1.html" style="background-color: #28a745; color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 1.2em; box-shadow: 0 4px 6px rgba(0,0,0,0.1); display: inline-block;">
+                ✅ Ver Gabarito e Respostas
+            </a>
         </div>
     </div>
 </body>
 </html>
-    <!-- Botão do Gabarito -->
-    <div style="text-align: center; margin-top: 40px; margin-bottom: 60px;">
-        <a href="gabarito-genesis-1.html" style="background-color: #28a745; color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 1.2em; box-shadow: 0 4px 6px rgba(0,0,0,0.1); display: inline-block;">
-            ✅ Ver Gabarito e Respostas
-        </a>
-    </div>
-
