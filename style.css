@@ -1,0 +1,227 @@
+/* Reset e configurações básicas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+/* Header Hero */
+.hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    margin-bottom: 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero p {
+    font-size: 1.5rem;
+    opacity: 0.95;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.breadcrumb a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb span {
+    color: #666;
+}
+
+/* Container principal */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 30px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+/* Cards de versículos */
+.versiculo-card {
+    background-color: #fff;
+    border-left: 5px solid #667eea;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Botão de número do versículo */
+.versiculo-numero {
+    background-color: #667eea;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    cursor: default;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+/* Texto do versículo */
+.versiculo-texto {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+/* Box de explicação */
+.explicacao {
+    background-color: #fff9e6;
+    border-left: 4px solid #ffd700;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.explicacao h3 {
+    color: #764ba2;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.explicacao p {
+    margin-bottom: 10px;
+    line-height: 1.7;
+}
+
+.explicacao ul {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.explicacao li {
+    margin-bottom: 8px;
+}
+
+/* Aplicação Prática */
+.aplicacao-pratica {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 40px 0;
+}
+
+.aplicacao-pratica h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.aplicacao-pratica ul {
+    list-style: none;
+}
+
+.aplicacao-pratica li {
+    margin-bottom: 15px;
+    padding-left: 10px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Navegação entre capítulos */
+.navegacao-capitulos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+    gap: 15px;
+}
+
+.btn-nav {
+    background-color: #667eea;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    flex: 1;
+    text-align: center;
+}
+
+.btn-nav:hover {
+    background-color: #764ba2;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.btn-nav.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px;
+    color: white;
+    background-color: rgba(0,0,0,0.2);
+    margin-top: 50px;
+}
+
+/* Responsivo para celular */
+@media (max-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1.2rem;
+    }
+    
+    .container {
+        padding: 15px;
+        border-radius: 0;
+    }
+    
+    .versiculo-texto {
+        font-size: 1.1rem;
+    }
+    
+    .navegacao-capitulos {
+        flex-direction: column;
+    }
+    
+    .btn-nav {
+        width: 100%;
+    }
+}
