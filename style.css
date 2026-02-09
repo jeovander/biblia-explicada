@@ -152,6 +152,66 @@ body {
     line-height: 1.6;
 }
 
+/* Perguntas para Reflexão */
+.perguntas-reflexao {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 40px 0;
+    border: 2px solid #667eea;
+}
+
+.perguntas-reflexao h2 {
+    color: #764ba2;
+    margin-bottom: 20px;
+}
+
+.perguntas-reflexao ol {
+    margin-left: 25px;
+}
+
+.perguntas-reflexao li {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Gabarito (expansível) */
+.gabarito {
+    margin-top: 30px;
+    background-color: #fff;
+    border: 2px solid #ffd700;
+    border-radius: 8px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.gabarito summary {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #764ba2;
+    cursor: pointer;
+    list-style: none;
+}
+
+.gabarito summary::-webkit-details-marker {
+    display: none;
+}
+
+.gabarito-conteudo {
+    margin-top: 20px;
+}
+
+.gabarito-conteudo h3 {
+    color: #667eea;
+    margin-bottom: 15px;
+}
+
+.gabarito-conteudo p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
 /* Navegação entre capítulos */
 .navegacao-capitulos {
     display: flex;
@@ -185,13 +245,37 @@ body {
     pointer-events: none;
 }
 
-/* Footer */
+/* Footer com foto e nome */
 footer {
     text-align: center;
     padding: 30px;
     color: white;
     background-color: rgba(0,0,0,0.2);
     margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.footer-text {
+    text-align: center;
+}
+
+.footer-text p {
+    margin: 5px 0;
 }
 
 /* Responsivo para celular */
@@ -223,5 +307,10 @@ footer {
     
     .btn-nav {
         width: 100%;
+    }
+    
+    .footer-avatar {
+        width: 60px;
+        height: 60px;
     }
 }
