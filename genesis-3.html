@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gênesis 3 - A Queda do Homem | Bíblia Explicada</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Estude Gênesis 3: A tentação da serpente, o pecado de Adão e Eva, as consequências da desobediência e a primeira promessa de redenção.">
+    <meta name="author" content="Jeovander">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Gênesis 3 - A Queda do Homem">
+    <meta property="og:description" content="Estude Gênesis 3: A tentação, o pecado e as consequências da desobediência de Adão e Eva.">
+    <meta property="og:image" content="https://jeovander.github.io/biblia-explicada/jeovander.jpg.png">
+    <meta property="og:url" content="https://jeovander.github.io/biblia-explicada/genesis-3.html">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .versiculo-numero {
+            cursor: pointer;
+            background: none;
+            border: none;
+            font: inherit;
+            color: inherit;
+            text-align: left;
+            width: 100%;
+            padding: 0;
+        }
+
+        .versiculo-numero::after {
+            content: " ▼";
+            font-size: 0.75em;
+            opacity: 0.6;
+            transition: transform 0.25s;
+            display: inline-block;
+        }
+
+        .versiculo-numero.aberto::after {
+            transform: rotate(-180deg);
+        }
+
+        .explicacao {
+            overflow: hidden;
+            transition: max-height 0.35s ease, opacity 0.3s ease;
+        }
+
+        .explicacao.fechado {
+            max-height: 0;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .btn-nav.disabled {
+            opacity: 0.4;
+            pointer-events: none;
+            cursor: not-allowed;
+        }
+
+        .compartilhar {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin: 28px 0;
+            justify-content: center;
+        }
+
+        .btn-compartilhar {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: opacity 0.2s, transform 0.15s;
+        }
+
+        .btn-compartilhar:hover {
+            opacity: 0.85;
+            transform: translateY(-2px);
+        }
+
+        .btn-wpp  { background: #25D366; color: #fff; }
+        .btn-copiar { background: #4A90D9; color: #fff; }
+        .btn-copiar.copiado { background: #27ae60; }
+
+        #toast {
+            position: fixed;
+            bottom: 28px;
+            left: 50%;
+            transform: translateX(-50%) translateY(80px);
+            background: #333;
+            color: #fff;
+            padding: 10px 22px;
+            border-radius: 24px;
+            font-size: 0.9rem;
+            opacity: 0;
+            transition: opacity 0.3s, transform 0.3s;
+            z-index: 999;
+            pointer-events: none;
+        }
+
+        #toast.visivel {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        #barra-progresso {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 4px;
+            width: 0%;
+            background: linear-gradient(90deg, #f39c12, #e74c3c);
+            z-index: 1000;
+            transition: width 0.1s linear;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="barra-progresso" role="progressbar" aria-label="Progresso de leitura"></div>
+    <div id="toast" aria-live="polite"></div>
+
+    <header class="hero">
+        <h1>📖 Gênesis 3</h1>
+        <p>A Queda do Homem</p>
+    </header>
+
+    <nav class="breadcrumb" aria-label="Navegação estrutural">
+        <a href="index.html">Início</a> >
+        <a href="index.html">Gênesis</a> >
+        <span aria-current="page">Capítulo 3</span>
+    </nav>
+
+    <div class="compartilhar">
+        <a href="https://wa.me/?text=Estude%20G%C3%AAnesis%203%20aqui%3A%20https%3A%2F%2Fjeovander.github.io%2Fbiblia-explicada%2Fgenesis-3.html"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="btn-compartilhar btn-wpp"
+           aria-label="Compartilhar no WhatsApp">
+            📲 Compartilhar no WhatsApp
+        </a>
+        <button class="btn-compartilhar btn-copiar" id="btnCopiar" aria-label="Copiar link desta página">
+            🔗 Copiar Link
+        </button>
+    </div>
+
+    <main class="container">
+
+        <!-- V1 -->
+        <div class="versiculo-card">
+            <button class="versiculo-numero aberto" aria-expanded="true">Versículo 1</button>
+            <p class="versiculo-texto">"Ora, a serpente era o mais astuto de todos os animais do campo que o Senhor Deus tinha feito. E esta disse à mulher: É assim que Deus disse: Não comereis de toda árvore do jardim?"</p>
+            <div class="explicacao">
+                <h3>💡 Explicação:</h3>
+                <p>A primeira tática do inimigo foi <strong>distorcer a Palavra de Deus</strong>. Deus disse "não coma desta UMA árvore" — a serpente perguntou "Deus disse que não podem comer de NENHUMA árvore?". Cuidado com quem reinterpreta o que Deus disse! 🐍</p>
+            </div>
+        </div>
+
+        <!-- V2-3 -->
+        <div class="versiculo-card">
+            <button class="versiculo-numero aberto" aria-expanded="true">Versículos 2-3</button>
+            <p class="versiculo-texto">"Respondeu a mulher à serpente: Do fruto das árvores do jardim podemos comer, mas do fruto da árvore que está no meio do jardim, disse Deus: Não comereis dele, nem nele tocareis, para que não morrais."</p>
+            <div class="explicacao">
+                <h3>💡 Explicação:</h3>
+                <p>Eva errou logo no início: <strong>ela acrescentou algo que Deus não disse</strong> ("nem nele tocareis" — Deus não havia proibido o toque, apenas o comer). Quando começamos a distorcer a Palavra — mesmo tentando protegê-la — abrimos brecha para o engano.</p>
+            </div>
+        </div>
+
+        <!-- V4-5 -->
+        <div class="versiculo-card">
+            <button class="versiculo-numero aberto" aria-expanded="true">Versículos 4-5</button>
+            <p class="versiculo-texto">"Disse a serpente à mulher: Certamente não morrereis. Porque Deus sabe que no dia em que comerdes desse fruto, vossos olhos se abrirão, e sereis como Deus, conhecendo o bem e o mal."</p>
+            <div class="explicacao">
+                <h3>💡 Explicação:</h3>
+                <p>A segunda tática: <strong>contradizer diretamente Deus</strong> e semear dúvida sobre as intenções dEle. "Deus está te escondendo algo bom!" — é a mesma mentira que o inimigo usa hoje: "Deus não quer o seu bem, Ele está te limitando."</p>
+                <ul>
+                    <li>🔴 <strong>Mentira 1:</strong> "Certamente não morrereis" — negação direta da consequência</li>
+                    <li>🔴 <strong>Mentira 2:</strong> "Sereis como Deus" — apelo ao orgulho e à autossuficiência</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- V6 -->
+        <div class="versiculo-card">
+            <button class="versiculo-numero aberto" aria-expanded="true">Versículo 6</button>
+            <p class="versiculo-texto">"Então, vendo a mulher que aquela árvore era boa para se comer, e agradável aos olhos, e árvore desejável para dar entendimento, tomou do seu fruto, comeu, e deu a seu marido, e ele também comeu."</p>
+            <div class="explicacao">
+                <h3>💡 Explicação:</h3>
+                <p>Os três caminhos do pecado (1 João 2:16):</p>
+                <ul>
+                    <li>👁️ <strong>"Agradável aos olhos"</strong> → Cobiça dos olhos</li>
+                    <li>😋 <strong>"Boa para se comer"</strong> → Desejo da carne</li>
+                    <li>🧠 <strong>"Desejável para dar entendimento"</strong> → Orgulho da vida</li>
+                </ul>
+                <p>Adão estava presente e <strong>ficou calado</strong> (v.6 diz "deu a seu marido que estava com ela"). Ele falhou em proteger e liderar.</p>
+            </div>
+        </div>
+
+        <!-- V7 -->
+        <div class="versiculo-card">
+            <button class="versiculo-numero aberto" aria-expanded="true">Versículo 7</button>
+            <p class="versiculo-texto">"Então foram abertos os olhos de ambos, e conheceram que estavam nus; pelo que coseram folhas de figueira, e fizeram para si aventais."</p>
+            <div class="explicacao">
+                <h3>💡 Explicação:</h3>
+                <p>Os olhos se abriram — mas não da forma que esperavam. Em vez de glória, vieram <strong>vergonha, medo e separação</strong>. As folhas de figueira representam as nossas tentativas humanas de "cobrir" nossos pecados com esforço próprio. Não funciona! Só Deus pode cobrir o pecado de verdade.</p>
+            </div>
+        </div>
+
+        <!-- V8 -->
+        <div class="versiculo-card">
+            <button class="versiculo-numero aberto" aria-expanded="true">Versículo 8</button>
+            <p class="versiculo-texto">"E, ouvindo a voz do Senhor Deus, que passeava no jardim à tardinha, esconderam-se o homem e sua mulher da presença do Senhor Deus, entre as árvores do jardim."</p>
+            <div class="explicacao">
+                <h3>💡 Explicação:</h3>
+                <p>Antes do pecado, Deus "passeava no jardim" com eles — havia intimidade e comunhão diária. Após o pecado, a reação natural foi <strong>se esconder de Deus</strong>. O pecado sempre gera distanciamento de Deus. Mas perceba: <strong>quem foi atrás de quem?</strong> Deus foi buscar o homem! ❤️</p>
+            </div>
+        </div>
+
+        <!-- V9 -->
+        <div class="versiculo-card">
+            <button class="versiculo-numero aberto" aria-expanded="true">Versículo 9</button>
+            <p class="versiculo-texto">"Mas chamou o Senhor Deus ao homem, e perguntou-lhe: Onde estás?"</p>
+            <div class="explicacao">
+                <h3>💡 Explicação:</h3>
+                <p><strong>"Onde estás?"</strong> — Deus sabia onde Adão estava. A pergunta não era por informação, era um <strong>convite ao arrependimento</strong>. Deus ainda hoje nos chama: "Onde você está espiritualmente? O que está acontecendo com você?" 🙏</p>
+            </div>
+        </div>
+
+        <!-- V10 -->
+        <div class="versiculo-card">
+            <button class="versiculo-numero aberto" aria-expanded="true">Versículo 10</button>
+            <p class="versiculo-texto">"Respondeu-lhe o homem: Ouvi a tua voz no jardim e tive medo, porque estava nu; e escondi-me."</p>
+            <div class="explicacao">
+                <h3>💡 Explicação:</h3>
+                <p>O pecado trouxe três consequências imediatas:</p>
+                <ul>
+                    <li>😨 <strong>Medo</strong> — antes havia confiança</li>
+                    <li>😳 <strong>Vergonha</strong> — antes havia inocência</li>
+                    <li>🙈 <strong>Fuga de Deus</strong> — antes havia comunhão</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- V11-12 -->
+        <div class="versiculo-card">
+            <button class="versiculo-numero aberto" aria-expanded="true">Versículos 11-12</button>
+            <p class="versiculo-texto">"Deus perguntou-lhe mais: Quem te mostrou que estavas nu? Comeste da árvore de que te ordenei que não comesses? Ao que respondeu o homem: A mulher que me deste por companheira deu-me a árvore, e eu comi."</p>
+            <div class="explicacao">
+                <h3>💡 Explicação:</h3>
+                <p>Em vez de assumir a responsabilidade, Adão <strong>culpou Eva</strong> — e indiretamente culpou o próprio Deus ("a mulher que <em>me deste</em>"). É a natureza humana após o pecado: fugir da responsabilidade e culpar os outros. O arrependimento genuíno começa com assumir o erro! 🤍</p>
+            </div>
+        </div>
+
+        <!-- V13 -->
+        <div class="versiculo-card">
+            <button class="versiculo-numero aberto" aria-expanded="true">Versículo 13</button>
+            <p class="versiculo-texto">"Perguntou o Senhor Deus à mulher: Que é isto que fizeste? Respondeu a mulher: A serpente enganou-me, e eu comi."</p>
+            <div class="explicacao">
+                <h3>💡 Explicação:</h3>
+                <p>Eva culpou a serpente. A corrente da culpa: Adão culpa Eva → Eva culpa a serpente. Ninguém assume! Mas Deus responsabilizou cada um. <strong>Ser enganado não elimina a responsabilidade pela escolha.</strong></p>
+            </div>
+        </div>
+
+        <!-- V14-15 -->
+        <div class="versiculo-card">
+            <button class="versiculo-numero aberto" aria-expanded="true">Versículos 14-15 ⭐ PROTO-EVANGELHO</button>
+            <p class="versiculo-texto">"Então o Senhor Deus disse à serpente: Porquanto fizeste isso, maldita serás tu dentre todos os animais; sobre o teu ventre andarás, e pó comerás todos os dias da tua vida. Porei inimizade entre ti e a mulher, e entre a tua descendência e a sua descendência; esta te ferirá a cabeça, e tu lhe ferirás o calcanhar."</p>
+            <div class="explicacao">
+                <h3>💡 Explicação:</h3>
+                <p>O versículo 15 é chamado de <strong>Proto-evangelho</strong> — a primeira promessa de redenção na Bíblia! Centenas de anos antes de Jesus:</p>
+                <ul>
+                    <li>🐍 <strong>"Tu lhe ferirás o calcanhar"</strong> → Jesus sofreu na cruz (ferida temporária)</li>
+                    <li>✝️ <strong>"Esta te ferirá a cabeça"</strong> → Jesus venceu o diabo na ressurreição (ferida fatal e definitiva)</li>
+                </ul>
+                <p>Mesmo no momento do julgamento, <strong>Deus já tinha um plano de salvação!</strong> ❤️</p>
+            </div>
+        </div>
+
+        <!-- V16 -->
+        <div class="versiculo-card">
+            <button class="versiculo-numero aberto" aria-expanded="true">Versículo 16</button>
+            <p class="versiculo-texto">"E à mulher disse: Multiplicarei grandemente a tua dor e a tua conceção; com dor darás à luz filhos; e o teu desejo será para o teu marido, e ele te governará."</p>
+            <div class="explicacao">
+                <h3>💡 Explicação:</h3>
+                <p>As consequências para Eva (e para toda a humanidade feminina):</p>
+                <ul>
+                    <li>😢 <strong>Dor no parto</strong> — algo que deveria ser só alegria agora envolve sofrimento</li>
+                    <li>⚖️ <strong>Tensão nos relacionamentos</strong> — a liderança e a submissão que deveriam ser harmônicas agora são disputadas</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- V17-19 -->
+        <div class="versiculo-card">
+            <button class="versiculo-numero aberto" aria-expanded="true">Versículos 17-19</button>
+            <p class="versiculo-texto">"E a Adão disse: Porquanto deste ouvido à voz de tua mulher, e comeste da árvore a respeito da qual te ordenei, dizendo: Não comerás dela; maldita é a terra por tua causa; com dor comerás dela todos os dias da tua vida. Espinhos e cardos também te produzirá; e tu comerás a erva do campo. No suor do teu rosto comerás o teu pão, até que voltes à terra; porque dela foste tomado; pois tu és pó e em pó te tornarás."</p>
+            <div class="explicacao">
+                <h3>💡 Explicação:</h3>
+                <p>Consequências para Adão (e toda a humanidade masculina):</p>
+                <ul>
+                    <li>🌱 <strong>Terra maldita</strong> — o trabalho antes era fácil, agora envolve luta e suor</li>
+                    <li>🌵 <strong>Espinhos e cardos</strong> — resistência e frustração no trabalho</li>
+                    <li>💀 <strong>"Em pó te tornarás"</strong> — a morte física entrou no mundo</li>
+                </ul>
+                <p>Repare: Deus disse "por tua causa" — Adão era o responsável. A liderança traz responsabilidade.</p>
+            </div>
+        </div>
+
+        <!-- V20 -->
+        <div class="versiculo-card">
+            <button class="versiculo-numero aberto" aria-expanded="true">Versículo 20</button>
+            <p class="versiculo-texto">"E chamou Adão o nome de sua mulher Eva; porquanto ela era a mãe de todos os viventes."</p>
+            <div class="explicacao">
+                <h3>💡 Explicação:</h3>
+                <p>"Eva" vem do hebraico <em>Chavah</em>, que significa <strong>"vida" ou "vivente"</strong>. Mesmo após o pecado e a sentença, Adão demonstra fé ao chamar sua esposa de "mãe de todos os viventes" — reconhecendo a promessa de descendência que Deus fizera no v.15. <strong>Fé mesmo no julgamento!</strong></p>
+            </div>
+        </div>
+
+        <!-- V21 -->
+        <div class="versiculo-card">
+            <button class="versiculo-numero aberto" aria-expanded="true">Versículo 21</button>
+            <p class="versiculo-texto">"E o Senhor Deus fez para Adão e para sua mulher túnicas de peles, e os vestiu."</p>
+            <div class="explicacao">
+                <h3>💡 Explicação:</h3>
+                <p>Um detalhe ENORME! Para fazer túnicas de pele, <strong>um animal teve que morrer</strong>. Este é o primeiro sacrifício registrado na Bíblia. Deus mesmo providenciou a cobertura:</p>
+                <ul>
+                    <li>🩸 <strong>Sangue derramado</strong> para cobrir o pecado</li>
+                    <li>👘 <strong>Folhas de figueira substituídas</strong> por cobertura de Deus</li>
+                    <li>✝️ <strong>Aponta diretamente para Jesus</strong> — o Cordeiro de Deus que tira o pecado do mundo</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- V22-23 -->
+        <div class="versiculo-card">
+            <button class="versiculo-numero aberto" aria-expanded="true">Versículos 22-23</button>
+            <p class="versiculo-texto">"E disse o Senhor Deus: Eis que o homem é como um de nós, sabendo o bem e o mal; ora, para que não estenda a sua mão, e tome também da árvore da vida, e coma, e viva para sempre, o Senhor Deus, pois, o lançou fora do jardim do Éden, para lavrar a terra de que fora tomado."</p>
+            <div class="explicacao">
+                <h3>💡 Explicação:</h3>
+                <p>Ser expulso do Éden foi, na verdade, <strong>um ato de misericórdia</strong>! Se o homem pecador comesse da árvore da vida, viveria eternamente em estado de pecado — separado de Deus para sempre, sem possibilidade de redenção. A expulsão manteve a possibilidade da salvação. 🙏</p>
+            </div>
+        </div>
+
+        <!-- V24 -->
+        <div class="versiculo-card">
+            <button class="versiculo-numero aberto" aria-expanded="true">Versículo 24</button>
+            <p class="versiculo-texto">"E lançou fora o homem; e pôs querubins ao oriente do jardim do Éden, e uma espada flamejante que se revolvia a todos os lados, para guardar o caminho da árvore da vida."</p>
+            <div class="explicacao">
+                <h3>💡 Explicação:</h3>
+                <p>Os querubins e a espada flamejante <strong>bloquearam o retorno ao Éden</strong>. O caminho de volta à presença plena de Deus estava fechado — até que Jesus dissesse na cruz: <strong>"Está consumado!"</strong> (João 19:30). No momento de Sua morte, o véu do templo (que separava os homens de Deus) se rasgou ao meio. O caminho foi reaberto! ✝️</p>
+            </div>
+        </div>
+
+        <!-- Aplicação -->
+        <div class="aplicacao-pratica">
+            <h2>💡 Aplicação Prática para Hoje</h2>
+            <ul>
+                <li>📖 <strong>Conheça a Palavra:</strong> A serpente distorceu o que Deus disse. Quem não conhece a Bíblia é presa fácil do engano.</li>
+                <li>🙅 <strong>Não negocie com a tentação:</strong> Eva deveria ter ignorado a serpente. Cada argumento respondido a abriu mais para o engano.</li>
+                <li>🤚 <strong>Assuma responsabilidade:</strong> Adão e Eva culparam os outros. Arrependimento verdadeiro começa com "eu errei".</li>
+                <li>🙏 <strong>Não se esconda de Deus:</strong> Quando você peca, a tendência é se afastar. Mas Deus está chamando: "Onde estás?"</li>
+                <li>❤️ <strong>Lembre-se do v.15:</strong> Mesmo no pior momento, Deus já tinha um plano. Isso se chama graça.</li>
+            </ul>
+        </div>
+
+        <!-- Reflexão -->
+        <div class="perguntas-reflexao">
+            <h2>🤔 Perguntas para Reflexão</h2>
+            <ol>
+                <li>Você conhece bem a Palavra de Deus para identificar quando ela está sendo distorcida?</li>
+                <li>Em quais áreas da sua vida você tem cedido à lógica de "parece bom, não vai machucar ninguém"?</li>
+                <li>Quando você peca, sua reação é se aproximar ou se afastar de Deus?</li>
+                <li>Existe algo que você precisa parar de culpar nos outros e assumir como sua responsabilidade?</li>
+                <li>Você acredita que, assim como no v.15, Deus tem um plano de restauração para a sua vida?</li>
+            </ol>
+
+            <details class="gabarito">
+                <summary>📝 Ver Sugestões de Respostas</summary>
+                <div class="gabarito-conteudo">
+                    <h3>Sugestões de Reflexão:</h3>
+                    <p><strong>1. Conhecer a Palavra:</strong> Reserve tempo diário para ler a Bíblia. Quem não conhece o original não percebe a falsificação.</p>
+                    <p><strong>2. Tentações sutis:</strong> O pecado raramente aparece como "algo ruim". Quase sempre parece bom, agradável e razoável. Peça sabedoria a Deus (Tiago 1:5).</p>
+                    <p><strong>3. Reação ao pecado:</strong> O arrependimento bíblico é se aproximar de Deus, não fugir dEle. 1 João 1:9 garante o perdão para quem confessa.</p>
+                    <p><strong>4. Responsabilidade:</strong> Identifique uma área onde você tem transferido culpa. Assuma e leve a Deus em oração.</p>
+                    <p><strong>5. Plano de Deus:</strong> A história do Éden termina em expulsão — mas a história da Bíblia termina em Apocalipse 22, com o homem de volta à presença de Deus. O plano dEle sempre vence! 🙌</p>
+                </div>
+            </details>
+        </div>
+
+        <!-- Navegação -->
+        <div class="navegacao-capitulos">
+            <a href="genesis-2.html" class="btn-nav">← Gênesis 2</a>
+            <a href="index.html" class="btn-nav">📑 Índice</a>
+            <span class="btn-nav disabled" aria-disabled="true">Gênesis 4 →</span>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <img src="jeovander.jpg.png" alt="Jeovander" class="footer-avatar">
+            <div class="footer-text">
+                <p><strong>Criado por Jeovander</strong></p>
+                <p>Bíblia Explicada - Devagar e sempre! 📖✨</p>
+                <p>&copy; 2026 Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle explicações
+        document.querySelectorAll('.versiculo-numero').forEach(btn => {
+            const explicacao = btn.closest('.versiculo-card').querySelector('.explicacao');
+            btn.classList.add('aberto');
+            btn.setAttribute('aria-expanded', 'true');
+
+            btn.addEventListener('click', () => {
+                const estaAberto = btn.classList.toggle('aberto');
+                btn.setAttribute('aria-expanded', estaAberto);
+                explicacao.classList.toggle('fechado', !estaAberto);
+            });
+        });
+
+        // Copiar link
+        document.getElementById('btnCopiar').addEventListener('click', function () {
+            navigator.clipboard.writeText(window.location.href).then(() => {
+                this.textContent = '✅ Link Copiado!';
+                this.classList.add('copiado');
+                mostrarToast('🔗 Link copiado para a área de transferência!');
+                setTimeout(() => {
+                    this.textContent = '🔗 Copiar Link';
+                    this.classList.remove('copiado');
+                }, 2500);
+            }).catch(() => {
+                mostrarToast('❌ Não foi possível copiar. Tente manualmente.');
+            });
+        });
+
+        // Toast
+        function mostrarToast(msg) {
+            const toast = document.getElementById('toast');
+            toast.textContent = msg;
+            toast.classList.add('visivel');
+            setTimeout(() => toast.classList.remove('visivel'), 3000);
+        }
+
+        // Barra de progresso
+        window.addEventListener('scroll', () => {
+            const doc = document.documentElement;
+            const scrollTop = doc.scrollTop || document.body.scrollTop;
+            const scrollHeight = doc.scrollHeight - doc.clientHeight;
+            const progresso = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+            document.getElementById('barra-progresso').style.width = progresso + '%';
+        });
+    </script>
+
+</body>
+</html>
